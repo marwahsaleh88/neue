@@ -2,6 +2,7 @@
 import "../css/style.css";
 import "../css/font.css";
 import "../css/animation.css";
+import "../css/fontawesome/css/all.min.css";
 import MainLayout from "../layouts/MainLayout.astro";
 const title: string = "Default Title";
 // import imges
@@ -9,40 +10,101 @@ import work1 from "../assets/images/work1.jpg";
 import work2 from "../assets/images/work2.jpg";
 import work3 from "../assets/images/work3.jpg";
 import work4 from "../assets/images/work4.jpg";
-import seid from "../assets/images/seid.jpg";
+import sony from "../assets/images/sony.jpg";
+import canon from "../assets/images/canon.jpg";
+import nikon from "../assets/images/nikon.jpg";
 ---
 
 <MainLayout>
   <main>
-
-    <div class="hero-container ">
-      <div  class="hero-img"         >
-        <h1 >Hero Title</h1>
-        <p>Hero Description</p>
-       
+    <!-- slideshow _intro _______________________________________________________________________ -->
+    <div
+      class="slideshow flex flex-col text-center items-end lg:items-center justify-center border w-full border-yellow-400"
+    >
+      <div class="info w-full max-w-screen-lg px-4 md:px-8">
+        <p
+          class="pp text-lg sm:text-xl md:text-xl lg:text-4xl text-white bg-black bg-opacity-20 p-2 sm:p-5 md:p-5 rounded-md mb-2 sm:mb-3"
+        >
+          ONLINE PHOTOGRAPHY COURSES !
+        </p>
       </div>
+    </div>
+
+    
+    <div class="search-bar flex items-center bg-yellow-100 rounded-lg shadow-md p-2 mb-10 mt-20 w-full max-w-md mx-auto">
+      <label for="search" class="text-orange-600">
+        <i class="fas fa-search text-orange-600"></i>
+      </label>
+      <input
+        type="text"
+        placeholder="Hier suchen..."
+        class="w-full p-2 pl-3 bg-transparent border-none outline-none text-gray-700 placeholder-orange-900 appearance-none"
+      />
     </div>
     
 
-    <section class="hero flex w-full overflow-hidden relative">
+    <hr class="border-1 border-yellow-600" />
+    <section class="kamera p-6 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-red-900 text-3xl font-bold text-center mb-6 underline underline-offset-8 decoration-red-500  ">
+          📷 Kamera Angebote
+        </h2>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Kamera 1 -->
+          <div class="flex flex-col items-center bg-gray-400 p-6  shadow-md w-full rounded-tl-3xl rounded-br-3xl ">
+            <img src={canon.src} alt="kamera" class="w-24 h-24 rounded-full object-cover">
+            <h3 class="text-xl font-semibold mt-4">📢 Canon EOS R5</h3>
+            <p class="text-black text-center">Professionelle Kamera mit 45 MP Auflösung und 8K-Video.</p>
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4">
+              Mehr Infos
+            </button>
 
-      <div  class="intro   flex flex-wrap   text-center p-6  md:flex-nowrap w-full overflow-hidden " >
-        <!-- slideshow ________________________________________________________________________ -->
-        <div class="slideshow   md:w-[90%]   lg:w-[95%]  h-[100vh] flex items-end justify-center"  >
 
-          <p  class="pp text-2xl text-white md:text-[2rem] bg-black bg-opacity-40 p-9 rounded-md mb-4"
-          > ONLINE PHOTOGRAPHY COURSES ! </p>
+          </div>
+    
+          <!-- Kamera 2 -->
+          <div class="flex flex-col items-center bg-gray-400 p-6  shadow-md w-full  rounded-tl-3xl rounded-br-3xl  ">
+            <img src={sony.src} alt="kamera 2" class="w-24 h-24 rounded-full object-cover">
+            <h3 class="text-xl font-semibold mt-4">📢 Sony A7 IV</h3>
+            <p class="text-black text-center">Vollformatsensor mit 33 MP und 4K-Videoaufnahme.</p>
+
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4">
+              Mehr Infos
+            </button>
+
+
+          </div>
+    
+          <!-- Kamera 3 -->
+          <div class="flex flex-col items-center bg-gray-400 p-6  shadow-md w-full rounded-tl-3xl rounded-br-3xl ">
+            <img src={nikon.src} alt="kamera 3" class="w-24 h-24 rounded-full object-cover">
+            <h3 class="text-xl font-semibold mt-4">📢 NIKON Z9</h3>
+            <p class="text-black text-center">Nikons beste professionelle Kamera mit 45,7 MP.</p>
+
+
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4">
+              Mehr Infos
+            </button>
+
+
+          </div>
         </div>
       </div>
+    
+      <ul class="mt-10 text-black text-left md:text-center space-y-2">
+        <li>   ✔️   Einschließlich . 2 Jahre Garantie </li>
+        <li>     ✔️ 30 Tage Rückgaberecht</li>
+        <li>   ✔️   24/7 Kundenservice</li>
+        <li>    ✔️  Umfangreiches Angebot an kostengünstigen Canon Produkten</li>
+        </ul>
 
-
-
-      <!-- angebot --------------------------------------------------------------------------- -->
-       <!-- <div class="angebot w-full md:w-[50%] h-[100vh] flex items-center justify-center bg-blue-500"> </div>
-    </section> -->
-
-    <hr class="border-1 border-yellow-600" />
-    <!-- <--! workshop----------------------------------------------------------------------------------- -->  
+      </ul>
+    </section>
+    
+      
+   
+    
 
     <div class="vater p-6 rounded-md">
       <div
@@ -108,39 +170,19 @@ import seid from "../assets/images/seid.jpg";
     --menu-bg: #d4eb0698;
     --menu-text: black;
   }
-  
+
   body {
     background-color: black;
     color: white;
   }
-  
-  
+
   img {
     width: 90%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(213, 197, 165, 0.5);
     max-width: 300px;
     margin: 0 auto;
   }
-
- 
-  .hero-img {
-    background-image: url("../assets/images/intro.webp");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 90%;
-    margin: 0 auto;
-
-    height: 60vh;
-    
-
-
-
-  }
-
-
 </style>

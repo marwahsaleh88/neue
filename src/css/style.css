@@ -22,26 +22,6 @@
 
 
 
-
-
-/* @media (min-width: 1024px) {
-  .slideshow {
-    margin-top: 40rem;
-    height: 70vh; 
-    width: 60%;
-    background-position: top;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); 
-    border: 2px solid var(--primary-color);
-  }
-
-  
-  } */
-
-
-
-
-
-
 .map-section {
   display: flex;
   flex-wrap: wrap; 
@@ -68,7 +48,6 @@
   line-height: 1.6; 
 }
 
-/* تنسيق الخريطة */
 .map-container {
   flex: 1;
   min-width: 300px; 
