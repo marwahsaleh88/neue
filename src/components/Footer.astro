@@ -1,0 +1,99 @@
+---
+import "../css/style.css"; // import CSS file
+import "../css/font.css";
+import "../css/animation.css";
+import Mape from "./Mape.astro";
+---
+
+<footer class="bg-gray-600 bg-opacity-50 text-white py-8 ">
+  <section class="mb-6 text-center md:flex md:justify-between">
+    <div>
+      <h2 class="text-2xl font-bold">Subscribe to our newsletter</h2>
+      <p class="mb-4">Get the latest news and updates from us</p>
+      <form action="" method="post" class="flex flex-col items-center gap-3">
+        <label for="email">Email:</label>
+        <input
+          class="bg-slate-500 px-4 py-2 rounded-md w-3/4 max-w-xs"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+        <button class="bg-black text-white px-4 py-2 rounded-md   " type="submit">Subscribe</button>
+      </form>
+    </div>
+    
+      <div class="daten flex flex-col  justify-center gap-4 text-2xl">
+        <a href="/post/daten">Impressum</a> 
+    <a href="/post/datenschutz">Datenschutz</a> 
+    <a href="/post/agb">AGB</a>
+    <a href=""> <i class="fas fa-cookie-bite text-purple-800 text-3xl"></i> 
+
+    </a>
+
+  </section>
+  <section class="text-center mt-8">
+    <div class="flex justify-center gap-6">
+      <a class="link-a text-5xl text-orange-700" href="" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="link-a text-5xl text-orange-700" href="" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="link-a text-5xl text-orange-700" href="" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="link-a text-5xl text-orange-700" href="" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+
+  
+    </div>
+  </section>
+
+  <div class="  ">
+    <Mape />
+
+    <p class="text-center mt-12">© 2025, Photograia</p>
+  </div>
+  
+ 
+</footer>
+
+<style>
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 1rem;
+  color: #fff;
+  width: 100%;
+}
+
+footer a {
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #d4eb06;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 4rem;
+  }
+
+  footer section {
+    text-align: center;
+    flex: 1; 
+  }
+  
+  
+  
+}
+</style>

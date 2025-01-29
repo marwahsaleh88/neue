@@ -1,0 +1,30 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+
+const { title = "Default Title" }: { title?: string } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>photo</title>
+</head>
+<body>
+<h1> </h1>
+		<Navigation/>
+	
+
+		<slot/>
+	
+	<Footer>
+
+	</Footer>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,191 @@
+---
+import "../css/style.css";
+import "../css/font.css";
+import "../css/fontawesome/css/all.min.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro";
+// import imges
+import pic1 from "../assets/images/pic1.jpg";
+import pic2 from "../assets/images/pic2.jpg";
+import pic3 from "../assets/images/pic3.jpg";
+import pic4 from "../assets/images/pic4.jpg";
+import pic5 from "../assets/images/pic5.jpg";
+import pic6 from "../assets/images/pic6.jpg";
+import pic7 from "../assets/images/pic7.jpg";
+import pic8 from "../assets/images/pic8.jpg";
+import pic9 from "../assets/images/pic9.jpg";
+import pic10 from "../assets/images/pic10.jpg";
+import pic11 from "../assets/images/pic11.jpg";
+import pic12 from "../assets/images/pic12.jpg";
+import pic13 from "../assets/images/pic13.jpg";
+import pic14 from "../assets/images/pic14.jpg";
+---
+
+<MainLayout>
+  <main>
+    <section class="kurs">
+      <h2>Unsere Kurse</h2>
+      <aside class="sidebar hidden xl:block md:none  ">
+        <h3 class="text-white text-5xl mb-4">Mehr Kurse</h3>
+
+        <div
+          class="search-bar flex items-center bg-white rounded-lg shadow-md p-2 mb-10"
+        >
+          <!-- icon Font Awesome -->
+          <i class="fas fa-search text-purple-800"></i>
+          <!-- input-->
+          <input
+            type="text"
+            placeholder="Hier suchen..."
+            class="ml-2 w-full bg-transparent border-none outline-none text-purple-950 placeholder-purple-500 appearance-none"
+          />
+        </div>
+        <div class="youtube mt-20 mb-11">
+          <iframe
+            width="90%"
+            height="100% mt-7 "
+            src="https://www.youtube.com/embed/7e90gBu4pas"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <iframe
+            width="90%"
+            height="100% mt-7"
+            src="https://www.youtube.com/embed/7e90gBu4pas"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+       
+      </aside>
+      <Card
+        title="Kurs: Porträtfotografie"
+        description="Erlernen Sie die Kunst der Porträtfotografie und wie Sie emotionale und ausdrucksstarke Bilder aufnehmen können. Geeignet für Anfänger und Fortgeschrittene."
+        img={pic1.src}
+        price="100€"
+        duration="2 Stunden"
+        date="2024-02-20"
+      
+      />
+
+      <Card
+        title="Kurs2"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+        img={pic2.src}
+        duration="2 Stunden"
+        price="300€"
+        date="2024-02-20"
+      />
+
+      <Card
+        title="Kurs3"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+        img={pic3.src}
+        duration="2 Stunden"
+        price="100€"
+      />
+
+      <Card
+        title="Kurs4"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+        img={pic4.src}
+        duration="2 Stunden"
+        price="100€"
+      />
+
+      <Card
+        title="Kurs5"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+        img={pic5.src}
+        duration="2 Stunden"
+        price="100€"
+      />
+
+      <Card
+        title="Kurs6"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+        img={pic12.src}
+        duration="2 Stunden"
+        price="100€"
+      />
+
+      <Card
+        title="Kurs7"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+        img={pic7.src}
+        duration="2 Stunden"
+        price="100€"
+      />
+    </section>
+  </main>
+</MainLayout>
+
+
+<style>
+  .kurs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: #f0f0f0;
+  }
+
+  h2 {
+    text-align: center; /* توسيط العنوان */
+    margin-bottom: 2rem; /* تباعد بين العناصر */
+    grid-columns: 1 / -1; /* يمتد العنوان على طول الشبكة */
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem;
+  }
+
+  .sidebar {
+    display: none;
+    background: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .kurs {
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: auto;
+      gap: 1rem;
+    }
+    .kurs > .card {
+      grid-column: auto;
+      grid-row: auto;
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      grid-column: 3 / 4;
+      grid-row: 2 / 4;
+
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: -5px -5px 30px 10px rgba(7, 125, 236, 0.5);
+      width: 30rem;
+
+      margin-top: 5rem;
+      background-image: url("../assets/images/pic6.jpg");
+      background-size: contain;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: aliceblue;
+    }
+    .sidebar h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+  }
+</style>

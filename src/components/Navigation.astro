@@ -1,0 +1,146 @@
+---
+import logo from "../assets/images/logo.svg"; // import SVG file
+import "../css/style.css"; // import CSS file
+import "../css/font.css";
+import "../css/animation.css";
+import "../css/fontawesome/css/all.min.css";
+---
+
+<header class="header-main fixed top-0 w-full z-10000">
+  <nav class="header-nav flex justify-between items-center">
+    <!-- Logo -->
+    <div class="logo cursor-pointer xl:fixed xl:top-5 xl:left-6">
+      <a href="/" class="">
+        <img src={logo.src} alt="Logo" class="w-[7rem] xl:w-[12rem] z-50 p-3" />
+      </a>
+    </div>
+
+    <!-- Input for Hamburger Menu -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle hidden" />
+    <label
+      for="menu-toggle"
+      class="icon block text-yellow-500 cursor-pointer xl:hidden md:hidden"
+      aria-label="Toggle Menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        class="stroke-yellow-500"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </label>
+
+    <!-- Menu -->
+    <ul
+      class="menu hidden flex-col gap-11 fixed top-[5rem] right-[6rem] w-max h-auto z-[10000] align-center justify-center
+     xl:flex xl:flex-row md:flex md:flex-row xl:gab-10 xl:items-center xl:fixed xl:top-9 xl:right-[7rem] md:top-0 md:right-0  overflow-hidden
+     "
+    >
+      <!-- list-item -->
+
+      <li class="list-item text-center p-2 xl  ">
+        <a href="/" class="block text-black  bg-yellow-500 bg-opacity-50 p-5 text-4xl lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none    md:bg-none md:bg-opacity-0 ">Home</a>
+      </li>
+      <li class="list-item p-4 text-center ">
+        <a href="/produkt" class="block text-black  bg-yellow-500 bg-opacity-50 p-5  text-4xl lg:text-yellow-50 lg:bg-none lg:bg-opacity-0    md:bg-none md:bg-opacity-0 "
+          >Kurse</a
+        >
+      </li>
+      <li class="list-item text-center p-5 xl">
+        <a href="/" class="block text-black  bg-yellow-500 bg-opacity-50 p-5 text-4xl lg:text-yellow-50 lg:bg-none lg:bg-opacity-0    md:bg-none md:bg-opacity-0  "
+          >Überuns</a
+        >
+      </li>
+      <li class="list-item text-center p-4 ">
+        <a href="/checkout" class="block text-black text-5xl  bg-yellow-500 bg-opacity-50 p-5 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0    md:bg-none md:bg-opacity-0">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  :root {
+    --primary-color: #f7dc6f;
+    --secondary-color: #1261c9;
+    --menu-bg: #d4eb0698;
+    --whait-color: #f7f7f7;
+    --menu-text: black;
+    --hover-scale: 1.1;
+    --hover-shadow: drop-shadow(0 0 0.7rem #d4eb06);
+    --hover-shadow1: drop-shadow(0 0 0.7rem #1261c9);
+  }
+
+  /* Show menu when checkbox is checked                        */
+  .menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .icon {
+    border: var(--secondary-color) solid 1px;
+    text-align: center;
+    margin: 1rem;
+  }
+  .icon:hover {
+    border: #aec912 solid 1px;
+  }
+
+  .icon svg {
+    width: 5rem;
+    height: 4rem;
+    stroke-width: 8;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .icon svg:hover {
+    stroke:var(--secondary-color);
+    transform: scale(1.2);
+  }
+
+ 
+  .list-item:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  @media (min-width: 1280px) {
+    .logo:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 1rem #93b305) ;
+      
+    }
+
+    .menu {
+      background-color: #1a151567;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    }
+
+    .list-item {
+      background-color: transparent;
+      transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+    }
+
+    .list-item:hover {
+      transform: scale(var(--hover-scale));
+      filter: var(--hover-shadow);
+    }
+
+    .icon {
+      display: none;
+    }
+    a {
+      font-family: "font-2", sans-serif;
+      
+    }
+  }
+</style>

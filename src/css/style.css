@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-dark-color: #10121a;
+  --background-dark-grey: #191d2b;
+  --border-color: #2e344e;
+  --background-light-color: #f1f1f1;
+  --background-light-color-2: rgba(3, 127, 255, 0.3);
+  --white-color: #fff;
+  --font-light-color: #a4acc4;
+  --font-dark-color: #313131;
+  --font-dark-color-2: #151515;
+  --sidebar-dark-color: #191d2b;
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+  .slideshow {
+    margin-top: 40rem;
+    height: 70vh; 
+    width: 60%;
+    background-position: top;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); 
+    border: 2px solid var(--primary-color);
+  }
+
+  
+  }
+
+
+
+
+
+
+.map-section {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1rem;
+  justify-content: center;   align-items: flex-start;
+  padding: 20px;
+  background-color: #d0d18d8e; 
+
+}
+
+.map-description {
+  max-width: 400px; 
+  font-family: Arial, sans-serif;
+  color: #333; 
+}
+
+.map-description h2 {
+  margin-bottom: 10px;
+  color: #0078A0;
+}
+
+.map-description p {
+  margin: 5px 0;
+  line-height: 1.6; 
+}
+
+/* تنسيق الخريطة */
+.map-container {
+  flex: 1;
+  min-width: 300px; 
+  max-width: 600px; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.753); 
+}
+
+.map-iframe {
+  width: 100%;
+  height: 300px; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+}
+ 
