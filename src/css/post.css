@@ -12,13 +12,13 @@
 }
 
 .back-button:hover {
-    background-color: #176977;
+    background-color: #44b927;
 
 }
 main {
     margin-top: 2rem;
     padding: 1rem;
-    background-color: #f8f9fa;
+    background-color: #a4ac87ab;
     border-radius: 5px;
     display: flex;
     flex-direction: column;

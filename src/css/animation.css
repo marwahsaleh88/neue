@@ -1,4 +1,9 @@
-/* Keyframes for the animation  */
+/* Keyframes for section hero  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .slideshow {
 
@@ -21,6 +26,9 @@
   100%{ background-image: url(../assets/images/slid5.jpg);}
 
 }
+
+
+/* Keyframes for the navigation border   */
 @media (min-width: 1024px) {
 .menu::before,
     .menu::after {
@@ -59,3 +67,24 @@
 
     
 }
+/* index animation  */
+
+.pp {
+  animation: colorchange 10s infinite alternate;
+}
+@keyframes colorchange {
+  0% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: rgb(243, 5, 5);
+  }
+
+  100% {
+    color: black;
+  }
+}
+
