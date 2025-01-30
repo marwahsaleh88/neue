@@ -1,8 +1,27 @@
-<main class="checkout-container p-6">
-  
+---
+import "../css/style.css";
+import "../css/font.css";
+import "../css/animation.css";
+import "../css/fontawesome/css/all.min.css";
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
 
+
+
+
+
+---
+
+
+
+
+
+<main class="checkout-container p-6">
+    
+<Navigation />
+  
   <!-- Form -->
-  <form action="/confirm" method="post" class="form-container space-y-6 text-white text-2xl">
+  <form action="/confirm" method="post" class="form-container space-y-6 text-white text-2xl mt-36">
     <!-- Kundendaten -->
     <section>
       <h2 class="text-5xl font-semibold mb-4 text-center">Kundendaten</h2>
@@ -60,8 +79,15 @@
     </div>
   </form>
 </main>
-
+<Footer>
 <style>
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(100deg, #000000, #9b860e) ;  
+  }
+
+
+
   .checkout-container {
     min-height: 100vh;
     display: flex;

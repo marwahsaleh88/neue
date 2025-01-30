@@ -15,7 +15,7 @@ import pic12 from "../assets/images/pic12.jpg";
 ---
 
 <MainLayout>
-  <section class="container mx-auto px-4 pt-24">
+  <section class="container mx-auto px-4 pt-80 mt-64 mb-60">
     <h2>Unsere Kurse</h2>
     <p class="text-center max-w-2xl mx-auto mb-8">Beschreibung über die Kurse</p>
     <p class="text-center max-w-2xl mx-auto mb-8">
@@ -85,13 +85,61 @@ import pic12 from "../assets/images/pic12.jpg";
 
       </div>
     </section>
+    
+    <section class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Kurs</th>
+            <th>Preis</th>
+            <th>Dauer</th>
+            <th>Datum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kurs1</td>
+            <td>100€</td>
+            <td>2 Stunden</td>
+            <td>2024-02-20</td>
+          </tr>
+          <tr>
+            <td>Kurs2</td>
+            <td>100€</td>
+            <td>2 Stunden</td>
+            <td>2024-02-20</td>
+          </tr>
+          <tr>
+            <td>Kurs3</td>
+            <td>100€</td>
+            <td>2 Stunden</td>
+            <td>2024-02-20</td>
+          </tr>
+          <tr>
+            <td>Kurs4</td>
+            <td>100€</td>
+            <td>2 Stunden</td>
+            <td>2024-02-20</td>
+          </tr>
+          <tr>
+            <td>Kurs5</td>
+            <td>100€</td>
+            <td>2 Stunden</td>
+            <td>2024-02-20</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <hr class="border-t-2 border-blue-500 my-8 " />
+    <hr class="border-t-2 border-gray-500 my-8" />
 </MainLayout>
 
 <style>
  
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(10deg,#FFD700, #000000);
+  background: linear-gradient(10deg,#ffd900af, #1f1b02c7 ,#7c6b0ad5, #000000 , #9b860e) ;
   color: #dabb10;
   margin: 0;
   padding: 0;
@@ -101,8 +149,50 @@ body {
 
 }
   
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* يجعل الجدول قابلًا للتمرير على الشاشات الصغيرة */
+    margin: auto;
+    padding: 1rem;
+}
 
-  
-  
+table {
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+    background: rgba(17, 17, 2, 0.3);
+    box-shadow: 0 0 10px rgba(218, 65, 5, 0.87);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #222;
+    color: #fff;
+    font-size: irem;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: rgba(20, 18, 11, 0.4);
+}
+
+tr:hover {
+    background: #dfb016;
+    color: #000;
+}
+
+/* تحسين الجدول على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+}
   
 </style>

@@ -1,102 +1,87 @@
----
-import "../css/style.css"; // import CSS file
-import "../css/font.css";
-import "../css/animation.css";
-import Mape from "./Mape.astro";
----
+<footer class="bg-gray-600 bg-opacity-50 text-white py-8 flex flex-col md:flex-row flex-wrap items-center gap-8 w-full">
 
-<footer class="bg-gray-600 bg-opacity-50 text-white py-8 ">
-  <section class="mb-6 text-center md:flex md:justify-between">
-    <div>
-      <h2 class="text-2xl font-bold">Subscribe to our newsletter</h2>
-      <p class="mb-4">Get the latest news and updates from us</p>
-      <form action="" method="post" class="flex flex-col items-center gap-3">
-        <label for="email">Email:</label>
-        <input
-          class="bg-slate-500 px-4 py-2 rounded-md w-3/4 max-w-xs"
-          type="email"
-          id="email"
-          name="email"
-          required
-        />
-        <button class="bg-black text-white px-4 py-2 rounded-md   " type="submit">Subscribe</button>
-      </form>
-    </div>
-    
-      <div class="daten flex flex-col  justify-center gap-4 text-2xl">
-        <a href="/post/daten">Impressum</a> 
+
+
+  
+  <div class="w-full md:w-1/4 flex flex-col items-start text-left gap-4 text-2xl px-4">
+    <p class="underline underline-offset-4 [text-decoration-color:#fff]">Service</p>
+    <a href="/post/daten">Impressum</a> 
     <a href="/post/datenschutz">Datenschutz</a> 
     <a href="/post/agb">AGB</a>
-    <a href=""> <i class="fas fa-cookie-bite text-purple-800 text-3xl"></i> 
-
-    </a>
-
-  </section>
-  <section class="text-center mt-8">
-    <div class="flex justify-center gap-6">
-      <a class="link-a text-5xl text-orange-700" href="" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a class="link-a text-5xl text-orange-700" href="" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a class="link-a text-5xl text-orange-700" href="" target="_blank" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a class="link-a text-5xl text-orange-700" href="" target="_blank" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
-
-  
-    </div>
-    <hr>
-  </section>
-
-  <div class="  ">
-    <Mape />
-    <hr class="mt-8 text-orange-800">
-    <br>
-
-    <p class="text-center mt-12">© 2025, Photograia</p>
+    <a href=""> <i class="fas fa-cookie-bite text-orange-900 text-5xl"></i></a>
   </div>
-  
- 
-</footer>
 
+  <section class="w-full md:w-1/4 flex flex-col items-center text-center gap-4">
+    <p class="underline underline-offset-4 [text-decoration-color:#fff]">Folge uns auf:</p>
+    <div class="flex justify-center gap-4">
+      <a class="text-4xl text-orange-700" href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a class="text-4xl text-orange-700" href="" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a class="text-4xl text-orange-700" href="" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a class="text-4xl text-orange-700" href="" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p class="text-center text-sm">© 2025, Photograia</p>
+  </section>
+
+  <section class="w-full md:w-1/4 flex flex-col items-center text-center px-4">
+    <h2 class="text-2xl font-bold">Subscribe to our newsletter</h2>
+    <p class="mb-4 text-sm">Get the latest news and updates from us</p>
+    <form action="" method="post" class="flex flex-col items-center gap-3">
+      <label for="email">Email:</label>
+      <input class="bg-slate-300 px-4 py-2 rounded-md w-3/4 max-w-xs" type="email" id="email" name="email" required />
+      <button class="bg-orange-600 text-white text-lg px-6 py-2 rounded-md" type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section class="w-full flex flex-col items-center text-center md:text-left max-w-4xl px-4">
+    <div class="w-full">
+      <h2 class="text-2xl font-bold mb-2">Unser Standort</h2>
+      <p class="text-lg mb-2">Besuchen Sie uns in unserem Büro. Wir sind leicht erreichbar.</p>
+      <p class="text-xl font-semibold text-white">📍 Adresse: Küstenstraße 123, Stadt, Deutschland</p>
+      <p class="text-lg">📞 Telefon: +49 123 456 789</p>
+      <p class="text-lg">✉️ E-Mail: info@beispiel.de</p>
+    </div>
+
+    <div class="w-full h-64 md:h-96 mt-6">
+      <iframe
+        src="https://www.google.com/maps?q=Berlin&output=embed"
+        class="w-full h-full rounded-md shadow-lg"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+</footer>
 <style>
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-
+  gap: 2rem;
   font-size: 1rem;
   color: #fff;
   width: 100%;
-}
-
-footer a {
-  transition: color 0.3s;
-}
-footer a:hover {
-  color: #d4eb06;
 }
 
 @media screen and (min-width: 768px) {
   footer {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: start;
     padding: 2rem;
-    gap: 4rem;
   }
-
-  footer section {
-    text-align: center;
-    flex: 1; 
-  }
-  
-  
-  
 }
+
+.map-container {
+  width: 100%;
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  .map-container {
+    height: 350px;
+  }
+}
+
+
 </style>
