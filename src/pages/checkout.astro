@@ -1,71 +1,67 @@
----
-import MainLayout from "../layouts/MainLayout.astro";
-import "../css/style.css";
-
----
-
-<MainLayout> 
-<main class="checkout-container  p-6">
+<main class="checkout-container p-6">
+  
 
   <!-- Form -->
-  <form action="/confirm" method="post" class="form-container space-y-6  text-white text-2xl">
+  <form action="/confirm" method="post" class="form-container space-y-6 text-white text-2xl">
     <!-- Kundendaten -->
     <section>
-        
-      <h2 class="text-5xl font-semibold mb-4 " >Kundendaten</h2>
+      <h2 class="text-5xl font-semibold mb-4 text-center">Kundendaten</h2>
       <div class="space-y-4">
-        <label for="name" class="block text-3xl"> Name:</label>
-        <input type="text" id="name" name="name" required class="input-field " placeholder="Name" /> 
+        <label for="name" class="block text-3xl">Name:</label>
+        <input type="text" id="name" name="name" required class="input-field" placeholder="Name" />
 
-        <label for="email" class="block">E-Mail:</label>
-        <input type="email" id="email" name="email" required class="input-field " placeholder="E-Mail" />
+        <label for="email" class="block text-3xl">E-Mail:</label>
+        <input type="email" id="email" name="email" required class="input-field" placeholder="E-Mail" />
 
-        <label for="phone" class="block">Telefon:</label>
+        <label for="phone" class="block text-3xl">Telefon:</label>
         <input type="tel" id="phone" name="phone" required class="input-field" placeholder="Telefon" />
-    
+      </div>
     </section>
 
     <!-- Adresse -->
     <section>
-      <h2 class="text-xl font-semibold mb-4">Adresse</h2>
+      <h2 class="text-3xl font-semibold mb-4 text-center">Adresse</h2>
       <div class="space-y-4">
-        <label for="city" class="block">Stadt:</label>
+        <label for="city" class="block text-3xl">Stadt:</label>
         <input type="text" id="city" name="city" required class="input-field" placeholder="Stadt" />
 
-        <label for="zipcode" class="block">Postleitzahl:</label>
-        <input type="text" id="zipcode" name="zipcode" required class="input-field"     placeholder="Postleitzahl" />
+        <label for="zipcode" class="block text-3xl">Postleitzahl:</label>
+        <input type="text" id="zipcode" name="zipcode" required class="input-field" placeholder="Postleitzahl" />
 
-        <label for="street" class="block">Straßenadresse:</label>
-        <input type="text" id="street" name="street" required class="input-field"   placeholder="Straßenadresse" />
+        <label for="street" class="block text-3xl">Strassenadresse:</label>
+        <input type="text" id="street" name="street" required class="input-field" placeholder="Strassenadresse" />
       </div>
     </section>
 
     <!-- Zahlungsmethoden -->
     <section>
-      <h2 class="text-2xl font-semibold mb-4">Zahlungsmethoden</h2>
-      <div class="space-y-2">
-        <label class="block">
-          <input type="radio" name="payment" value="paypal" required  > PayPal
+      <h2 class="text-3xl font-semibold mb-4 text-center">Zahlungsmethoden</h2>
+      <div class="space-y-3">
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="payment" value="paypal" required class="w-6 h-6"> <span> PayPal</span>
         </label>
-        <label class="block">
-          <input type="radio" name="payment" value="credit_card" required> Kreditkarte
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="payment" value="credit_card" required class="w-6 h-6"> <span> Kreditkarte</span>
         </label>
-        <label class="block">
-          <input type="radio" name="payment" value="bank_transfer" required> Banküberweisung
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="payment" value="bank_transfer" required class="w-6 h-6"> <span>  Bankueberweisung</span>
         </label>
       </div>
     </section>
 
-
     <!-- Button -->
     <button type="submit" class="button">
-      Kauf abschließen
+      Kauf abschliessen
     </button>
+    <div class="flex justify-between gap-4">
+      <!--               -->
+      <p><a href="/" class="back-button">Zurck zur Startseite</a></p>
+      
+    </div>
   </form>
 </main>
-</MainLayout>
+
 <style>
-    
   .checkout-container {
     min-height: 100vh;
     display: flex;
@@ -76,59 +72,58 @@ import "../css/style.css";
 
   .form-container {
     width: 100%;
-    max-width: 500px;
-   
+    max-width: 600px;
     background-image: url("../assets/images/pic11.jpg");
     background-size: cover;
     background-position: center;
-    border: gold 2px solid;
+    border: 2px solid gold;
     border-radius: 15px;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba(229, 233, 0, 0.664);
-    box-shadow: -5px -5px 10px rgba(229, 233, 0, 0.664);
-    margin-right: 2rem;
-
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgba(229, 233, 0, 0.664), -5px -5px 10px rgba(229, 233, 0, 0.664);
   }
-
-
 
   .input-field {
-
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border: 3px solid #e4f312;
-    border-radius: 4px;
-    font-size: 1rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
     color: #22223b;
-    font-size: 2rem;
+    transition: all 0.3s ease;
   }
+
   .input-field:focus {
     outline: none;
     border-color: #f01808;
+    box-shadow: 0 0 10px rgba(240, 24, 8, 0.7);
   }
+
   .input-field::placeholder {
-    color: #1518c5;
+    color: #333;
   }
-  
 
   .button {
     width: 100%;
     padding: 0.75rem;
-    background: #e48509;
-    color: #fff;
+    background: linear-gradient(to right, #e48509, #ff8c00);
+    color: white;
     border: none;
-    border-radius: 4px;
-    font-size: 1.2rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: bold;
     cursor: pointer;
-   
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   }
 
   .button:hover {
-    background: #3ad809;
+    background: linear-gradient(to right, #3ad809, #34c759);
+    transform: scale(1.05);
   }
 
-  /* استعلامات الوسائط (للشاشات الأكبر) */
+  .button:focus {
+    outline: none;
+  }
   @media screen and (min-width: 768px) {
     .checkout-container {
       flex-direction: row;
@@ -141,12 +136,12 @@ import "../css/style.css";
     }
 
     .input-field {
-      font-size: 1.1rem;
-      padding: 0.75rem;
+      font-size: 1.3rem;
+      padding: 1rem;
     }
 
     .button {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
     }
   }
 </style>
