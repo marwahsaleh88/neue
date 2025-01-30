@@ -44,7 +44,10 @@
       height: 2px;
       background: linear-gradient(90deg, transparent, #f2ff00, transparent);
       background-size: 200% 100%;
-      animation: dynamite-light 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;/* Applies  to create a dynamic gradient movement. */
+      animation: dynamite-light 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;
+      
+      
+      
           }
     .menu::before {
       top: 0;
