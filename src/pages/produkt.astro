@@ -100,7 +100,7 @@ import pic12 from "../assets/images/pic12.jpg";
           <tr>
             <td>Kurs1</td>
             <td>100€</td>
-            <td>2 Stunden</td>
+            <td>3 Stunden</td>
             <td>2024-02-20</td>
           </tr>
           <tr>
@@ -131,8 +131,6 @@ import pic12 from "../assets/images/pic12.jpg";
       </table>
     </section>
     
-    <hr class="border-t-2 border-blue-500 my-8 " />
-    <hr class="border-t-2 border-gray-500 my-8" />
 </MainLayout>
 
 <style>
@@ -151,13 +149,13 @@ body {
   
 .table-container {
     width: 100%;
-    overflow-x: auto; /* يجعل الجدول قابلًا للتمرير على الشاشات الصغيرة */
-    margin: auto;
+    overflow-x: auto;
+        margin: auto;
     padding: 1rem;
 }
 
 table {
-    width: 70%;
+    width: 80%;
     margin: auto;
     border-collapse: collapse;
     text-align: left;
@@ -167,16 +165,20 @@ table {
     overflow: hidden;
 }
 
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
+td {
+    padding: 1rem;
+    border: none;
+font-size: 1.4rem;
 }
 
 th {
+    padding: 1rem;
     background: #222;
     color: #fff;
-    font-size: irem;
+    font-size: 1rem;
     font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: #ec5a05 3px solid;
 }
 
 tr:nth-child(even) {
@@ -188,11 +190,5 @@ tr:hover {
     color: #000;
 }
 
-/* تحسين الجدول على الشاشات الصغيرة */
-@media (max-width: 768px) {
-    table {
-        font-size: 14px;
-    }
-}
-  
+
 </style>

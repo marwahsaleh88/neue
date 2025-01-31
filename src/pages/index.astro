@@ -13,158 +13,300 @@ import work4 from "../assets/images/work4.jpg";
 import sony from "../assets/images/sony.jpg";
 import canon from "../assets/images/canon.jpg";
 import nikon from "../assets/images/nikon.jpg";
+import image11 from "../assets/images/image11.webp";
+import image12 from "../assets/images/image12.webp";
+import image13 from "../assets/images/image13.webp";
+
+
+
+
+
+
 ---
 
 <MainLayout>
   <main>
-    <!--________________________ slideshow _intro _______________________________________________________________________ -->
+    <!-- slideshow _intro _______________________________________________________________________ -->
     <div
-      class="slideshow    lg:items-center justify-center border w-full border-yellow-400"
+      class="slideshow flex flex-col text-center items-end lg:items-center justify-center border w-full border-yellow-400"
     >
       <div class="info w-full max-w-screen-lg px-4 md:px-8">
-        <h1>   photoooo</h1>
-        <p
-          class="pp text-lg sm:text-xl md:text-xl lg:text-4xl text-white bg-black bg-opacity-20 p-2 sm:p-5 md:p-5 rounded-md mb-2 sm:mb-3"
+        <h1
+          class="text-lg bold md:text-3xl lg:text-5xl text-white bg-white bg-opacity-20 p-2 rounded-md mb-2 sm:mb-3"
         >
           ONLINE PHOTOGRAPHY COURSES !
-        </p>
+        </h1>
       </div>
     </div>
 
-    
-    <div class="search-bar flex items-center bg-yellow-100 rounded-lg shadow-md p-2 mb-10 mt-20 w-full max-w-md mx-auto">
+    <!-- über uns _intro _______________________________________________________________________ -->
+    <div class="uberuns
+                border-2 border-yellow-400 mt-6 m-20 p-12"
+    >
+      <h2 class="name text-center text-orange-500 text-2xl md:text-5xl">
+        FocusPro Schule
+      </h2>
+
+      <h2 class="text-2xl p-4 text-yellow-200 md:text-2xl lg:text-5xl">
+        Online-Fotoschule
+      </h2>
+      <p class="text-justify p-4 text-xl text-white md:text-2xl lg:text-4xl">
+        Willkommen in unserer spezialisierten Online-Fotoschule! Wir bieten
+        professionelle Fotokurse, die du bequem von überall aus absolvieren
+        kannst. Unsere Online-Kurse decken verschiedene Bereiche der Fotografie
+        ab, von den Grundlagen bis zu fortgeschrittenen Techniken.
+      </p>
+      <p class="text-justify p-4 text-xl text-white md:text-2xl lg:text-4xl">
+        Zusätzlich zu den Online-Kursen hast du die Möglichkeit, an exklusiven
+        Workshops teilzunehmen, in denen du praktische Erfahrungen sammeln
+        kannst. Unsere Experten begleiten dich auf deinem Weg, dein
+        fotografisches Können auf das nächste Level zu bringen.
+      </p>
+      <p class="text-justify p-4 text-xl text-white md:text-2xl lg:text-4xl">
+        Egal, ob du Anfänger oder fortgeschrittener Fotograf bist – unsere Kurse
+        sind auf deine individuellen Bedürfnisse abgestimmt. Starte jetzt deine
+        Reise in die Welt der Fotografie!
+      </p>
+    </div>
+    <!-- serchbar _intro _______________________________________________________________________ -->
+
+    <div
+      class="search-bar flex items-center bg-yellow-100 rounded-lg shadow-md p-2 mb-10 mt-20 w-full max-w-md mx-auto"
+    >
       <label for="search" class="text-orange-600">
         <i class="fas fa-search text-orange-600"></i>
       </label>
       <input
         type="text"
-        placeholder="Hier suchen..."
+        placeholder="Entdecke neue Fotografie-Kurse"
         class="w-full p-2 pl-3 bg-transparent border-none outline-none text-gray-700 placeholder-orange-900 appearance-none"
       />
     </div>
-    
 
-    <hr class="border-1 border-yellow-600" />
-    <section class="kamera p-6 bg-gray-100">
+<!-- team  _____________________________________________________________--->
+
+<section class="team-section py-16  text-center">
+  <h2 class=" text-xl md:text-4xl font-bold text-yellow-100  mb-10">Unser Team</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    
+    <!-- Mitglied 1 -->
+    <div class="team-member  p-6 rounded-xl shadow-lg flex flex-col items-center ">
+      <div class=" w-[100%] h-auto bg-gray-300 rounded-full overflow-hidden">
+        <img src={image11.src} alt="Teammitglied 1" class="w-full h-full object-cover hover-zoom">
+      </div>
+      <h3 class="text-2xl font-semibold mt-4 text-gray-800">Max Müller</h3>
+      <p class="text-gray-600">Fotograf & Trainer</p>
+    </div>
+
+    <!-- Mitglied 2 -->
+    <div class="team-member  p-6 rounded-xl shadow-lg flex flex-col items-center">
+      <div class="w-[100%] h-auto bg-gray-300 rounded-full overflow-hidden ">
+        <img src={image12.src} alt="Teammitglied 2" class="w-full h-full object-cover hover-zoom">
+      </div>
+      <h3 class="text-2xl font-semibold mt-4 text-gray-800">Laura Schmidt</h3>
+      <p class="text-gray-600">Porträtfotografin</p>
+    </div>
+
+    <!-- Mitglied 3 -->
+    <div class="team-member  p-4 rounded-xl shadow-lg flex flex-col items-center">
+      <div class="w-[100%] h-auto bg-gray-300 rounded-full overflow-hidden ">
+        <img src={image13.src} alt="Teammitglied 3" class="w-full h-full object-cover  hover-zoom">
+      </div>
+      <h3 class="text-2xl font-semibold mt-4 text-gray-800">Felix Bauer</h3>
+      <p class="text-gray-600">Landschaftsfotograf</p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- produkte _intro _______________________________________________________________________ -->
+
+    <section class="kamera p-6 ">
       <div class="container mx-auto">
-        <h2 class="text-red-900 text-3xl font-bold text-center mb-6 underline underline-offset-8 decoration-red-500  ">
+        <h2
+          class="text-red-900 text-3xl font-bold text-center mb-6 underline underline-offset-8 decoration-red-500"
+        >
           📷 Kamera Angebote
         </h2>
-    
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Kamera 1 -->
-          <div class="flex flex-col items-center bg-gray-400 p-6  shadow-md w-full rounded-tl-3xl rounded-br-3xl ">
-            <img src={canon.src} alt="kamera" class="w-24 h-24 rounded-full object-cover">
+          <div
+            class="flex flex-col items-center bg-gray-400 p-6 shadow-md w-full rounded-tl-3xl rounded-br-3xl"
+          >
+            <img
+              src={canon.src}
+              alt="kamera"
+              class="w-24 h-24 rounded-full object-cover"
+            />
             <h3 class="text-xl font-semibold mt-4">📢 Canon EOS R5</h3>
-            <p class="text-black text-center">Professionelle Kamera mit 45 MP Auflösung und 8K-Video.</p>
-            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4">
-              Mehr Infos
+            <p class="text-black text-center">
+              Professionelle Kamera mit 45 MP Auflösung und 8K-Video.
+            </p>
+            <button
+              class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-bl-3xl rounded-tr-3xl"
+            >
+            in den Warenkorb
             </button>
-
-
           </div>
-    
+
           <!-- Kamera 2 -->
-          <div class="flex flex-col items-center bg-gray-400 p-6  shadow-md w-full  rounded-tl-3xl rounded-br-3xl  ">
-            <img src={sony.src} alt="kamera 2" class="w-24 h-24 rounded-full object-cover">
-            <h3 class="text-xl font-semibold mt-4">📢 Sony A7 IV</h3>
-            <p class="text-black text-center">Vollformatsensor mit 33 MP und 4K-Videoaufnahme.</p>
+          <div
+            class="flex flex-col items-center bg-gray-400 p-6 shadow-md w-full rounded-tl-3xl rounded-br-3xl"
+          >
+            <img
+              src={sony.src}
+              alt="kamera 2"
+              class="w-24 h-24 rounded-full object-cover mb-10"
+            />
+            <h3 class="text-xl font-semibold mt-16">📢 Sony A7 IV</h3>
+            <p class="text-black text-center">
+              Vollformatsensor mit 33 MP und 4K-Videoaufnahme.
+            </p>
 
-            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4">
-              Mehr Infos
-            </button>
-
-
+            <button
+              class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-bl-3xl rounded-tr-3xl"
+            >
+            in den Warenkorb            </button>
           </div>
-    
+
           <!-- Kamera 3 -->
-          <div class="flex flex-col items-center bg-gray-400 p-6  shadow-md w-full rounded-tl-3xl rounded-br-3xl ">
-            <img src={nikon.src} alt="kamera 3" class="w-24 h-24 rounded-full object-cover">
+          <div
+            class="flex flex-col items-center bg-gray-400 p-6 shadow-md w-full rounded-tl-3xl rounded-br-3xl"
+          >
+            <img
+              src={nikon.src}
+              alt="kamera 3"
+              class="w-24 h-24 rounded-full object-cover"
+            />
             <h3 class="text-xl font-semibold mt-4">📢 NIKON Z9</h3>
-            <p class="text-black text-center">Nikons beste professionelle Kamera mit 45,7 MP.</p>
+            <p class="text-black text-center">
+              Nikons beste professionelle Kamera mit 45,7 MP.
+            </p>
 
-
-            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4">
-              Mehr Infos
-            </button>
-
-
+            <button
+              class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-bl-3xl rounded-tr-3xl"
+            >
+            in den Warenkorb            </button>
           </div>
         </div>
       </div>
-    
-      <ul class="mt-10 text-black text-left md:text-center space-y-2">
-        <li>   ✔️ Einschließlich . 2 Jahre Garantie </li>
-        <li>   ✔️ 30 Tage Rückgaberecht</li>
-        <li>   ✔️ 24/7 Kundenservice</li>
-        <li>   ✔️ Umfangreiches Angebot an kostengünstigen Canon Produkten</li>
-        </ul>
 
+      <ul class=" text-l md:text-2xl mt-10 text-black text-left md:text-center space-y-2">
+        <li>✔️ Einschließlich . 2 Jahre Garantie</li>
+        <li>✔️ 30 Tage Rückgaberecht</li>
+        <li>✔️ 24/7 Kundenservice</li>
+     
       </ul>
     </section>
-    
-      
-   
-    
 
-    <div class="vater p-6 rounded-md">
+
+    <!-- workshops _intro _______________________________________________________________________ -->
+  
+  <div class="vater p-6 rounded-md">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 bg-black bg-opacity-50 p-9"
+    >
       <div
-        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 bg-black bg-opacity-50 p-9"
+        class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
       >
-        <div
-          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
-        >
-          <img
-            src={work1.src}
-            alt="bild1"
-            class="w-full object-cover rounded-md"
-          />
-          <h3 class="text-3xl mt-2 text-white">📌Workshop</h3>
-          <p class="text-2xl text-justify">loh hjkhg jhg lkj lkjhl</p>
-        </div>
-        <div
-          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
-        >
-          <img
-            src={work2.src}
-            alt="bild2"
-            class="w-full object-cover rounded-md"
-          />
-          <h3 class="text-3xl mt-2 text-white">📌Workshop</h3>
-          <p class="text-2xl text-justify">loh hjkhg jhg lkj lkjhl</p>
-        </div>
+        <img
+          src={work1.src}
+          alt="bild1"
+          class=" hover-zoom w-full object-cover rounded-md"
+        />
 
-        <div
-          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
+        <h3 class="text-3xl mt-2 text-white">📌Workshop</h3>
+        <p class="text-2xl text-justify">🔹 Kreative Bildkomposition</p>
+        <p class="text-lg md:2xl p-4">
+          🔹 Lerne die Grundlagen der Bildkomposition, um deine Fotos auf das
+          nächste Level zu bringen. Entdecke, wie du Linien, Farben und
+          Perspektiven gezielt einsetzen kannst.
+        </p>
+        <button
+          class="bg-yellow-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-tl-3xl rounded-br-3xl"
         >
-          <img
-            src={work3.src}
-            alt="bild3"
-            class="w-full object-cover rounded-md"
-          />
-          <h3 class="text-3xl mt-2 text-white">📌Workshop</h3>
-          <p class="text-2xl text-justify">loh hjkhg jhg lkj lkjhl</p>
-        </div>
-
-        <div
-          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
-        >
-          <img
-            src={work4.src}
-            alt="bild4"
-            class="w-full object-cover rounded-md"
-          />
-          <h3 class="text-3xl mt-2 text-white">📌Workshop</h3>
-          <p class="text-2xl text-justify">loh hjkhg jhg lkj lkjhl</p>
-        </div>
+          Mehr Infos
+        </button>
       </div>
-      <hr class="border-2 border-black" />
-    </div>
-    <hr class="border-1 border-black" />
-  </main>
+      <div
+        class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
+      >
+        <img
+          src={work2.src}
+          alt="bild2"
+          class=" hover-zoom w-full object-cover rounded-md"
+        />
+        <h3 class="text-3xl mt-2 text-white">📌Workshop</h3>
+        <p class="text-xl text-justify p-3">
+          🔹 Licht & Schatten in der Fotografie
+        </p>
+        <p class="text-lg md:2xl p-4">
+          Erfahre, wie du mit Licht und Schatten spielst, um dramatische und
+          ausdrucksstarke Bilder zu erstellen. Perfekt für Porträt- und
+          Landschaftsfotografie.
+        </p>
+        <button
+          class="bg-yellow-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-tl-3xl rounded-br-3xl"
+        >
+          Mehr Infos
+        </button>
+      </div>
 
-  <hr class="border-2 border-orange-600" />
+      <div
+        class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
+      >
+        <img 
+          src={work3.src}
+          alt="bild3"
+          class="hover-zoom   w-full object-cover rounded-md  "
+        />
+        <h3 class="text-3xl mt-2 text-white">📌Workshop</h3>
+        <p class="text-xl text-justify p-3">🔹 Mobile Fotografie Meisterkurs</p>
+        <p class="text-lg md:2xl p-4">
+          Nutze dein Smartphone wie ein Profi! Entdecke Apps, Techniken und
+          Tipps, um beeindruckende Bilder direkt mit deinem Handy aufzunehmen.</p>
+          <button
+            class="bg-yellow-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-tl-3xl rounded-br-3xl"
+          >
+            Mehr Infos
+          </button>
+        
+      </div>
+
+      <div
+        class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
+      >
+        <img
+          src={work4.src}
+          alt="bild4"
+          class=" hover-zoom w-full object-cover rounded-md"
+        />
+        <h3 class="text-3xl mt-2 text-white">📌Workshop</h3>
+        <p class="text-xl text-justify p-3">
+          🔹Portraitfotografie mit natürlichem Licht
+        </p>
+        <p class="text-lg md:2xl p-4">
+          Lerne, wie du beeindruckende Portraits mit natürlichem Licht
+          aufnimmst. Perfekt für Fotografen, die ohne Studioausrüstung arbeiten
+          möchten
+        </p>
+        <button
+          class="bg-yellow-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-tl-3xl rounded-br-3xl"
+        >
+          Mehr Infos
+        </button>
+      </div>
+    </div>
+    <hr class="border-2 border-black" />
+  </div>
+  <hr class="border-1 border-black" />
 </MainLayout>
+
+<hr class="border-2 border-orange-600" />
+</main>
 
 <style>
   :root {
@@ -186,4 +328,25 @@ import nikon from "../assets/images/nikon.jpg";
     max-width: 300px;
     margin: 0 auto;
   }
+  .team-section {
+    background: linear-gradient(180deg, #ffd900b4, #444444, #111111);
+   
+  }
+
+  .team-member {
+    background: linear-gradient(150deg, #443e0b, #bb9051, #333333);
+   
+    box-shadow: 0 0 10px #ecd8afc2;
+  }
+
+  .uberuns {
+
+    background: linear-gradient(180deg, #5a4500be, #1c1c1c, #000000);
+  }
+  .kamera {
+    background: linear-gradient(180deg, #111111, #222222, #b67f12);
+  }
+
+
+
 </style>

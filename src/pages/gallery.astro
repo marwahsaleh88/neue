@@ -1,0 +1,294 @@
+---
+import "../css/style.css";
+import "../css/font.css";
+import "../css/animation.css";
+import "../css/fontawesome/css/all.min.css";
+import MainLayout from "../layouts/MainLayout.astro";
+const title: string = "Default Title";
+// import imges
+import sto1 from "../assets/images/sto1.jpg";
+import sto2 from "../assets/images/sto2.jpg";
+import sto3 from "../assets/images/sto3.jpg";
+import sto4 from "../assets/images/sto4.jpg";
+import sto5 from "../assets/images/sto5.jpg";
+import sto6 from "../assets/images/sto6.jpg";
+import sto7 from "../assets/images/sto7.jpg";
+import sto8 from "../assets/images/sto8.jpg";
+import sto9 from "../assets/images/sto9.jpg";
+import sto10 from "../assets/images/sto10.jpg";
+import sto11 from "../assets/images/sto11.jpg";
+import sto12 from "../assets/images/sto12.jpg";
+import sto13 from "../assets/images/sto13.jpg";
+---
+
+<MainLayout>
+  <main class="">
+
+
+  >
+
+
+
+    <h1 class="text-center ">Galerie</h1>
+
+    <div class="gallery grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img src={sto1.src} alt="work1" class="gallery-image" />
+
+      <img src={sto3.src} alt="work3" class="gallery-image" />
+
+      <img src={sto4.src} alt="work4" class="gallery-image" />
+
+      <img src={sto2.src} alt="work2" class="gallery-image" />
+
+      <img src={sto6.src} alt="work4" class="gallery-image" />
+
+
+      
+
+      <img src={sto7.src} alt="work4" class="gallery-image" />
+
+      <img src={sto8.src} alt="work4" class="gallery-image" />
+
+      <img src={sto9.src} alt="work4" class="gallery-image" />
+
+      <img src={sto10.src} alt="work4" class="gallery-image" />
+
+      <img src={sto11.src} alt="work4" class="gallery-image" />
+
+      <img src={sto12.src} alt="work4" class="gallery-image" />
+
+      <img src={sto5.src} alt="work4" class="gallery-image" />
+      <img src={sto13.src} alt="work4" class="gallery-image" />
+
+
+
+      <div class="ring text-center w-full ">
+        <i class="icon "></i>
+        <i class="icon "></i>
+        <i class="icon "></i>
+        <i class="icon "></i>
+        <i class="icon "></i>
+        <i class="icon "></i>
+        <i class="icon "></i>
+        <i class="icon "></i>
+        <i class="icon "></i>
+        <div class="login">
+         
+          
+            <h1>Minimalsmus</h1>
+        
+        </div>
+      </div
+
+    </div>
+    <MainLayout />
+    <style>
+main {
+    background-color: black;
+}
+      .gallery {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .gallery-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+
+        box-shadow: 5px  5px 15px rgba(236, 232, 1, 0.836);
+        box-shadow:  -5px -5px 50px rgba(236, 232, 1, 0.836);
+        transition:  transform 0.3s ease,
+        
+      }
+
+      .gallery-image:hover {
+        transform: scale(1.1);
+        object-fit: contain;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+      
+      .gallery-item:hover .gallery-image {
+    transform: scale(1.2);
+  }
+  :root {
+  --main-color: #ff0000;
+  --main-color2: #ff5e00;
+  --main-color3: #fffd44;
+  --main-color4: #5eff00;
+  --main-color5: #1adfdf;
+  --main-color6: #2c0cbb;
+  --main-color7: #ffffff;
+  --main-color8: #7a0dd3;
+  --main-color9: #f30909;
+  --main-color10: #ffd700;
+  --main-color11: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--main-color11);
+}
+
+.ring .login h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: var(--main-color7);
+  z-index: 20;
+  transition: transform 0.5s, filter 0.5s;
+}
+.ring .login h1:hover {
+  color: #edf102;
+  filter: drop-shadow(0 0 40px rgb(41, 19, 2));
+  transform: scale(2);
+  transform: translate(-50%, -50%) scale(1.5);
+  transition: 2s ease-out;
+}
+
+/* الحلقة */
+.ring {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring .icon {
+  position: absolute;
+  border-style: solid;
+  transform-origin: center;
+  transition: opacity 4s ease;
+}
+
+.ring i:nth-child(1) {
+  inset: 10px;
+  border-width: 1px;
+  border-color: yellowgreen;
+  border-radius: 38% 62% 63% 37% / 48% 44% 56% 59%;
+  animation: rotate3 1s linear infinite;
+  z-index: 10;
+}
+
+.ring i:nth-child(2) {
+  inset: 15px;
+  border-width: 1px;
+  border-color: var(--main-color2);
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: rotate 4s linear infinite;
+}
+
+.ring i:nth-child(3) {
+  inset: 20px;
+  border-width: 1px;
+  border-color: var(--main-color3);
+  border-radius: 41% 44% 56% 59% / 35% 62% 63% 37%;
+  animation: rotate2 6s linear infinite;
+}
+
+.ring i:nth-child(4) {
+  inset: 30px;
+  border-width: 1px;
+  border-color: var(--main-color4);
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: rotate 3s linear infinite;
+}
+
+.ring i:nth-child(5) {
+  inset: 40px;
+  border-width: 1px;
+  border-color: var(--main-color5);
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: rotate2 3s linear infinite;
+}
+
+.ring i:nth-child(6) {
+  inset: 50px;
+  border-width: 1px;
+  border-color: var(--main-color6);
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: rotate 5s linear infinite;
+}
+
+.ring i:nth-child(7) {
+  inset: 150px;
+  border-width: 5px;
+  filter: drop-shadow(0 0 20px var(--main-color));
+  border-color: var(--main-color7);
+  border-radius: 50% 30%;
+  animation: rotate2 10s linear infinite;
+}
+
+.ring i:nth-child(8) {
+  inset: 60px;
+  border-width: 1px;
+  border-color: var(--main-color8);
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: rotate 5s linear infinite;
+}
+
+.ring i:nth-child(9) {
+  inset: 70px;
+  border-width: 1px;
+  border-color: var(--main-color9);
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: rotate2 3s linear infinite;
+}
+
+.ring i:nth-child(7) {
+  filter: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate3 {
+  0% {
+    transform: rotate(190deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.ring:hover .icon{
+    opacity: 0;  /* all circal disapperd*/
+  }
+  
+
+
+
+
+    </style>
+  </main>
+</MainLayout>
