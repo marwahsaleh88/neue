@@ -21,7 +21,7 @@ import "../css/fontawesome/css/all.min.css";
     <input type="checkbox" id="menu-toggle" class="menu-toggle hidden" />
     <label
       for="menu-toggle"
-      class="icon block text-yellow-500  cursor-pointer xl:hidden md:hidden"
+      class="icon block text-yellow-500  cursor-pointer xl:hidden md:block"
       aria-label="Toggle Menu"
     >
       <svg
@@ -41,9 +41,9 @@ import "../css/fontawesome/css/all.min.css";
 
     <!-- Menu -->
     <ul
-      class="menu hidden flex-col gap-11 fixed top-[5rem] right-[6rem] w-max h-auto z-[10000] align-center justify-center
-     xl:flex xl:flex-row md:flex md:flex-row xl:gab-10 xl:items-center xl:fixed xl:top-9 xl:right-[7rem] md:top-0 md:right-0  overflow-hidden
-     bg-black  p-1 rounded-md"
+      class="menu hidden flex-col gap-11 fixed top-[5rem] right-[6rem] w-max h-auto z-[10000] align-center justify-center md:hidden  md:fixed 
+     xl:flex xl:flex-row   xl:gab-10 xl:items-center xl:fixed xl:top-9 xl:right-[7rem] md:top-10 md:right-25  md:bg-black md:text-yellow-400 overflow-hidden
+       p-1 rounded-md"
     >
       <!-- list-item -->
 
@@ -61,7 +61,7 @@ import "../css/fontawesome/css/all.min.css";
         >
       </li>
       <li class="list-item text-center p-2 ">
-        <a href="/checkout" class="block text-black text-5xl  bg-yellow-500 bg-opacity-50 p-5 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0    md:bg-none md:bg-opacity-0">
+        <a href="/checkout" class="block text-yellow-500 text-5xl  bg-yellow-500 bg-opacity-50 p-5 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0    md:bg-none md:bg-opacity-0">
           <i class="fas fa-shopping-cart"></i>
         </a>
       </li>
