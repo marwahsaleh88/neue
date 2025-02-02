@@ -6,15 +6,16 @@ import "../css/fontawesome/css/all.min.css";
 import Footer from "../components/Footer.astro";
 import Navigation from "../components/Navigation.astro";
 ---
+<main class="checkout-container flex flex-col items-center justify-center">
 
-<main class="checkout-container p-6">
   <Navigation />
 
   <!-- Form -->
   <form
     action="/confirm"
     method="post"
-    class="form-container space-y-6 text-white text-2xl mt-36"
+    class="form-container w-[100%] text-yellow-100 text-2xl  mt-36 mb-9     rounded-tl-3xl rounded-br-3xl shadow-xl border-4 border-yellow-600 p-9
+   "
   >
     <!-- Kundendaten -->
     <section>
@@ -138,16 +139,15 @@ import Navigation from "../components/Navigation.astro";
     <!-- Button -->
     <button type="submit" class="button"> Kauf abschliessen </button>
     <div class="flex justify-between gap-4">
-      <!--               -->
-      <p><a href="/" class="back-button">Zurck zur Startseite</a></p>
-    </div>
+    
   </form>
 </main>
+<hr class="text-orange-700">
 <Footer />
   <style>
     body {
       font-family: "Poppins", sans-serif;
-      background: linear-gradient(100deg, #000000, #9b860e);
+      background: linear-gradient(100deg, #000000, #534701);
     }
 
     .checkout-container {
@@ -156,26 +156,26 @@ import Navigation from "../components/Navigation.astro";
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 2rem;
     }
 
     .form-container {
-      width: 100%;
-      max-width: 600px;
       background-image: url("../assets/images/pic11.jpg");
       background-size: cover;
       background-position: center;
-      border: 2px solid gold;
-      border-radius: 15px;
-      padding: 2rem;
       box-shadow:
         5px 5px 10px rgba(229, 233, 0, 0.664),
         -5px -5px 10px rgba(229, 233, 0, 0.664);
+
+
     }
 
     .input-field {
       width: 100%;
       padding: 0.75rem;
-      border: 3px solid #e4f312;
+      border: 3px solid #1612f3ad;
+      border-radius: 10px;
+    
       border-radius: 8px;
       font-size: 1.5rem;
       color: #22223b;
@@ -189,7 +189,7 @@ import Navigation from "../components/Navigation.astro";
     }
 
     .input-field::placeholder {
-      color: #333;
+      color: #04123a;
     }
 
     .button {
