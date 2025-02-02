@@ -12,20 +12,22 @@ const {
 } = Astro.props;
 ---
 
-<div class="card">
-  <div class="card-image rounded-tr-3xl rounded-bl-3xl
+<div class="card rounded-tr-3xl rounded-bl-3xl
+">
+  <div class="card-image rounded-tr-3xl rounded-bl-3xl 
 
   ">
     <img src={img} alt={title} class="rounded-tr-3xl rounded-bl-3xl
 " />
   </div>
   <div class="card-content">
-    <h3 class="text-xl md:text-4xl">{title}</h3>
-    <p class="text-xl md:text-2xl ">{description}</p>
-    <p class="text-xl md:text-2xl " >{duration}</p>
-    <p class="text-xl md:text-2xl">Preis: {price}</p>
-    <p class="text-xl md:text-2xl" >{data}</p>
-    <button onclick="window.location.href='/checkout';">{button}</button>
+    <h3 class="text-xl md:text-4xl   rounded-tl-3xl rounded-br-3xl  ">{title}</h3>
+    <p class="text-xl md:text-2xl rounded-tl-3xl rounded-br-3xl ">{description}</p>
+    <p class="text-xl md:text-2xl  rounded-tl-3xl rounded-br-3xl" >{duration}</p>
+    <p class="text-xl md:text-2xl rounded-tl-3xl rounded-br-3xl ">Preis: {price}</p>
+    <p class="text-xl md:text-2xl  rounded-tl-3xl rounded-br-3xl" >{data}</p>
+    <button onclick="window.location.href='/checkout';" class="rounded-tr-3xl rounded-bl-3xl
+">{button}</button>
   </div>
 </div>
 
@@ -40,9 +42,8 @@ const {
     width: 100%;
     margin: 0 auto;
     background-color: #d6d3125e;
-    border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(218, 143, 4, 0.87);
+    box-shadow: 0 0 10px rgba(119, 78, 2, 0.87);
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -67,14 +68,12 @@ const {
     color: #ddcac2;
     width: 100%;
     background-color: rgba(20, 18, 11, 0.384);
-    border-radius: 15px;
     padding: 0.5rem;
   }
   .card-content p {
     color: #ddcac2;
     width: 100%;
     background-color: rgba(20, 18, 11, 0.384);
-    border-radius: 15px;
     padding: 0.5rem;
   }
 
@@ -87,7 +86,7 @@ const {
     align-self: center;
     color: #fff;
     border: none;
-    border-radius: 5px;
+   
     cursor: pointer;
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 10px rgba(210, 236, 238, 0.87);
@@ -100,7 +99,6 @@ const {
   @media screen and (min-width: 768px) {
     .card {
       width: 100%;
-      border-radius: 1rem;
       flex-direction: row;
       align-items: center;
     }
@@ -109,7 +107,6 @@ const {
       height: auto;
       object-fit: cover;
       display: block;
-      border-radius: 10px;
     }
     .card-content {
       display: flex;
@@ -126,7 +123,6 @@ const {
       display: flex;
       flex-direction: row;
       align-items: center;
-      border-radius: 1rem;
     }
 
     .card-image {
@@ -160,7 +156,6 @@ const {
       background-color: #dfb016;
       color: #fff;
       border: none;
-      border-radius: 5px;
       cursor: pointer;
       transition: 0.3s ease-in-out;
       box-shadow: 0 0 10px rgba(210, 236, 238, 0.87);
