@@ -13,15 +13,14 @@ import "../css/fontawesome/css/all.min.css";
       <a href="/" class="">
         <img src={logo.src} alt="Logo" class="w-[7rem] xl:w-[10rem] z-50 p-3" />
       </a>
-     
     </div>
     <!-- Navigation Menu -->
 
     <!-- Input for Hamburger Menu -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle hidden" />
+    <input type="checkbox" id="menu-toggle" class="menu-toggle hidden peer" />
     <label
       for="menu-toggle"
-      class="icon block text-yellow-500  cursor-pointer xl:hidden md:block  border-2 border-blue-800 rounded-full p-2 bg-black bg-opacity-55 shadow-lg"
+      class="icon block text-yellow-500 cursor-pointer xl:hidden border-2 border-blue-800 rounded-full p-2 bg-black bg-opacity-55 shadow-lg z-[1000001] md:hidden"
       aria-label="Toggle Menu"
     >
       <svg
@@ -41,28 +40,38 @@ import "../css/fontawesome/css/all.min.css";
 
     <!-- Menu -->
     <ul
-    class="menu hidden flex-col gap-11 fixed top-[5rem] right-[6rem] w-max h-auto z-[10000] align-center justify-center 
-    bg-black text-white p-1 rounded-md 
-    md:hidden md:fixed md:top-10 md:right-25 md:bg-black md:text-yellow-400 
-    xl:flex xl:flex-row xl:gap-10 xl:items-center xl:fixed xl:top-9 xl:right-[7rem] overflow-hidden"
+      class="menu fixed top-4 right-0 md:left-auto md:right-6 w-3/4 max-w-lg h-auto bg-black md:bg-transparent text-yellow-300 transform transition-transform duration-500 ease-in-out
+      flex flex-col md:flex-row gap-8 justify-center items-center translate-x-full peer-checked:translate-x-0 z-[99999]
+        md:w-auto md:h-auto rounded-tr-3xl rounded-bl-3xl shadow-xl border-2 border-blue-800 md:border-none"
     >
       <!-- list-item -->
 
-      <li class="list-item text-center p-2 xl  ">
-        <a href="/" class="block  bg-yellow-500 bg-opacity-50 p-5 text-4xl lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none    md:bg-opacity-0   text-amber-300">Home</a>
+      <li class="list-item text-center p-2 xl">
+        <a
+          href="/"
+          class="block w-48 bg-yellow-500 bg-opacity-50 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 text-amber-300 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
+          >Home</a
+        >
       </li>
-      <li class="list-item p-2 text-center ">
-        <a href="/produkt" class="block  bg-yellow-500 bg-opacity-50 p-5  text-4xl lg:text-yellow-50 lg:bg-none lg:bg-opacity-0    md:bg-none md:bg-opacity-0  text-amber-300 "
+      <li class="list-item p-2 text-center">
+        <a
+          href="/produkt"
+          class="block w-48 bg-yellow-500 bg-opacity-50 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 text-amber-300 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
           >Kurse</a
         >
       </li>
-      <li class="list-item text-center p-2 xl">
-        <a href="/gallery" class="block   bg-yellow-500 bg-opacity-50 p-5 text-4xl lg:text-yellow-50 lg:bg-none lg:bg-opacity-0    md:bg-none md:bg-opacity-0  text-amber-300"
+      <li class="list-item text-center p-5 xl">
+        <a
+          href="/gallery"
+          class="block w-48 bg-yellow-500 bg-opacity-50 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 text-amber-300 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
           >Gallery</a
         >
       </li>
-      <li class="list-item text-center p-2 ">
-        <a href="/checkout" class="block text-yellow-500 text-5xl  bg-yellow-500 bg-opacity-50 p-5 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0    md:bg-none md:bg-opacity-0">
+      <li class="list-item text-center p-2">
+        <a
+          href="/checkout"
+          class="block w-48 text-yellow-500 bg-yellow-500 bg-opacity-50 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
+        >
           <i class="fas fa-shopping-cart"></i>
         </a>
       </li>
@@ -85,6 +94,8 @@ import "../css/fontawesome/css/all.min.css";
   /* Show menu when checkbox is checked                        */
   .menu-toggle:checked ~ .menu {
     display: flex;
+    right: 0;
+    z-index: 100000;
   }
 
   .icon {
@@ -104,27 +115,30 @@ import "../css/fontawesome/css/all.min.css";
   }
 
   .icon svg:hover {
-    stroke:var(--secondary-color);
+    stroke: var(--secondary-color);
     transform: scale(1.2);
   }
 
- 
   .list-item:hover {
     transform: scale(1.1);
     filter: brightness(1.2);
     background-color: var();
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 768px) {
     .logo:hover {
       transform: scale(1.1);
-      filter: drop-shadow(0 0 1rem #df0635c0) ;
-      
+      filter: drop-shadow(0 0 1rem #df0635c0);
     }
 
     .menu {
       background-color: #1a151567;
       backdrop-filter: blur(10px);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+      max-width: 1200px; /* منع أن تصبح عريضة جدًا */
+      padding: 10px 20px; /* تقليل المسافات الداخلية */
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      transform: none;
     }
 
     .list-item {
@@ -144,7 +158,6 @@ import "../css/fontawesome/css/all.min.css";
     }
     a {
       font-family: "font-2", sans-serif;
-      
     }
   }
 </style>

@@ -137,36 +137,51 @@ import Navigation from "../components/Navigation.astro";
     </section>
 
     <!-- Button -->
-    <button type="submit" class="button"> Kauf abschliessen </button>
-    <div class="flex justify-between gap-4">
+    <button type="submit" class="button  rounded-tl-3xl rounded-br-3xl "> Kauf abschliessen </button>
+   
     
-  </form>
+</form>
 </main>
 <hr class="text-orange-700">
+
+
 <Footer />
+
   <style>
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+}
     body {
       font-family: "Poppins", sans-serif;
       background: linear-gradient(100deg, #000000, #534701);
     }
 
     .checkout-container {
+      width: 100%;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 2rem;
+      margin-top: 2rem;
     }
 
     .form-container {
       background-image: url("../assets/images/pic11.jpg");
       background-size: cover;
       background-position: center;
-      box-shadow:
-        5px 5px 10px rgba(229, 233, 0, 0.664),
-        -5px -5px 10px rgba(229, 233, 0, 0.664);
-
+     
 
     }
 
@@ -175,7 +190,6 @@ import Navigation from "../components/Navigation.astro";
       padding: 0.75rem;
       border: 3px solid #1612f3ad;
       border-radius: 10px;
-    
       border-radius: 8px;
       font-size: 1.5rem;
       color: #22223b;
@@ -195,15 +209,12 @@ import Navigation from "../components/Navigation.astro";
     .button {
       width: 100%;
       padding: 0.75rem;
-      background: linear-gradient(to right, #e48509, #ff8c00);
+      background: linear-gradient(to right, #e0e409, #be5905);
       color: white;
-      border: none;
-      border-radius: 8px;
       font-size: 1.6rem;
       font-weight: bold;
       cursor: pointer;
       transition: all 0.3s ease;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     }
 
     .button:hover {

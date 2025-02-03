@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  
 
 }
 :root {
@@ -21,7 +23,15 @@
 
 
 
-
+.header-main, .header-nav, .logo, .content, .titles, .page-container {
+  z-index: 1 !important;
+  position: relative;
+}
+.header-main, .header-nav {
+  position: absolute ;
+  top: 0;
+  width: 100%;
+}
 .map-section {
   display: flex;
   flex-wrap: wrap; 

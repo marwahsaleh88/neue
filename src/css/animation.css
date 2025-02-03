@@ -92,6 +92,35 @@
     }
   }
 
+.jump::before {
+  content: "📷";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.jump::before {
+  content: "📷";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 3rem;
+  animation: bounce 1s infinite alternate;
+}
+.gallery-image {
+  box-shadow: 
+    0 5px 15px rgba(255, 215, 0, 0.6), /* ظل ذهبي ناعم أسفل الصورة */
+    0 0 40px rgba(236, 232, 1, 0.8);  /* تأثير إشعاعي متوهج حول الصورة */
+  transition: transform 0.3s ease-in-out;
+}
 
 
 
