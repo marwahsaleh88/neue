@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: Datenschutz­erklärung
-author: md
-description: inhalt liche daten
+author: 
+description: Datenschutz­erklärung
 hideNavbar: true
 
 ---

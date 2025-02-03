@@ -18,7 +18,7 @@ import sto9 from "../assets/images/sto9.jpg";
 import sto10 from "../assets/images/sto10.jpg";
 import sto11 from "../assets/images/sto11.jpg";
 import sto12 from "../assets/images/sto12.jpg";
-import sto13 from "../assets/images/sto13.jpg";
+
 ---
 
 <MainLayout>
@@ -94,11 +94,7 @@ import sto13 from "../assets/images/sto13.jpg";
         alt="work4"
         class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-[70%] object-cover shadow-lg transition-transform duration-300 ease-in-out"
       />
-      <img
-        src={sto13.src}
-        alt="work4"
-        class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-[70%] object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
+     
     </div>
     <a href="#" class="bg-yellow-300 opacity-50 text-black text-2xl text-center p-5  sticky bottom-0 left-1/2 transform-translat-x-1/2  rounded-tr-3xl rounded-bl-3xl hover:bg-green-500 transition duration-300 "> up </a>
 
@@ -107,7 +103,9 @@ import sto13 from "../assets/images/sto13.jpg";
 
 <style>
   main {
-    background: linear-gradient(180deg, #000428, #004e92, #000428);
-    scroll-behavior: smooth;
+    
+    background: linear-gradient(160deg, rgba(0, 0, 0, 1) 50%, rgba(255, 215, 0, 0.2) 90%),
+    conic-gradient(from 90deg, rgba(255, 215, 0, 0.1) 0%, rgba(0, 0, 0, 0) 30%, rgba(255, 217, 0, 0.397) 60%, rgba(0, 0, 0, 0) 100%);
+  background-attachment: fixed;
   }
 </style>

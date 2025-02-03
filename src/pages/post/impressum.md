@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: IMPRESSUM
-author: person
+author: ........
 description: Impressum
 
 

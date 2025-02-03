@@ -15,8 +15,14 @@
     background-color: #44b927;
 
 }
+h1 
+{
+    font-size: 2rem;
+    color: #007BFF;
+    text-align: center;
+}
 main {
-    margin-top: 2rem;
+    
     padding: 1rem;
     background-color: #a4ac87ab;
     border-radius: 5px;
@@ -26,4 +32,5 @@ main {
     text-align: justify;
     
 }
+
 
