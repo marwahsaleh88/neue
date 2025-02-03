@@ -323,6 +323,20 @@ import image13 from "../assets/images/image13.webp";
     <a href="#" class="bg-yellow-300 opacity-50 text-black text-2xl text-center p-5  sticky bottom-0 left-1/2 transform-translat-x-1/2  rounded-tr-3xl rounded-bl-3xl hover:bg-green-500 transition duration-300 "> up </a>
 
     <hr class="border-2 border-orange-600" />
+
+    <!--        --------------      -->
+<input type="checkbox" id="accept-cookies" class="hidden peer absolute">
+
+<!--  ______________________-->
+<div class="cookie-banner fixed bottom-9 left-1/2 transform -translate-x-1/2 bg-gray-600  text-yellow-300 p-9 rounded-tr-3xl rounded-bl-3xl shadow-lg w-[90%] max-w-md flex flex-col md:flex-row justify-between items-center z-[10000] transition-all duration-500 peer-checked:opacity-0 peer-checked:translate-y-5 peer-checked:pointer-events-none">
+  <p class="text-sm md:text-base">Diese Website verwendet Cookies, um Ihnen das beste Erlebnis zu bieten. <i class="fas fa-cookie-bite  text-3xl text-amber-600" ></i></p>
+  
+  <!-- aus :............................................................................-->
+  <label for="accept-cookies" class="mt-2 md:mt-0 bg-yellow-500 text-black px-4 py-2 rounded-tr-3xl rounded-bl-3xl hover:bg-yellow-600 transition cursor-pointer">
+    Akzeptieren
+  </label>
+</div>
+
   </main>
 
   <style>
@@ -363,5 +377,13 @@ import image13 from "../assets/images/image13.webp";
     .kamera {
       background: linear-gradient(180deg, #1c1c1c, #3a2a10, #b67f12);
     }
+
+    #accept-cookies:checked ~ .cookie-banner {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+
   </style>
 </MainLayout>
