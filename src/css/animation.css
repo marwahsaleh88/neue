@@ -8,12 +8,12 @@
 .slideshow {
   width: 100%;
   height: 60vh;
-  background-image: url('/intro1.png');
-  background-size: 150% auto ;
+  background-image: url("/intro1.png");
+  background-size: 150% auto;
   background-position: 0% center;
   background-repeat: no-repeat;
 
-  animation: panorama 25s linear infinite ;
+  animation: panorama 25s linear infinite;
 }
 
 @keyframes panorama {
@@ -36,23 +36,57 @@
   animation: gallery 10s infinite linear;
 }
 @keyframes gallery {
-  0% { background-image: url(../assets/images/slide1.jpg);}
-  10% { background-image: url(../assets/images/slide2.jpg);}
-   15% { background-image: url(../assets/images/slide2.jpg);}
-   20% { background-image: url(../assets/images/slide3.jpg);}
-   25% { background-image: url(../assets/images/slide3.jpg);}
-  30% { background-image: url(../assets/images/slide3.jpg);}
-  35% { background-image: url(../assets/images/slide4.jpg);}
-  45% { background-image: url(../assets/images/slide4.jpg);}
-  50% { background-image: url(../assets/images/slide5.jpg);}
-  55% { background-image: url(../assets/images/slide5.jpg);}
-  60% { background-image: url(../assets/images/slide5.jpg);}
-  65% { background-image: url(../assets/images/slide6.jpg);}
-  70% { background-image: url(../assets/images/slide6.jpg);}
-  75% { background-image: url(../assets/images/slide6.jpg);}
-  80% { background-image: url(../assets/images/slide10.jpg);}  
-  85% { background-image: url(../assets/images/slide7.jpg);}
-  100%{ background-image: url(../assets/images/slide8.jpg);} 
+  0% {
+    background-image: url(../assets/images/slide1.jpg);
+  }
+  10% {
+    background-image: url(../assets/images/slide2.jpg);
+  }
+  15% {
+    background-image: url(../assets/images/slide2.jpg);
+  }
+  20% {
+    background-image: url(../assets/images/slide3.jpg);
+  }
+  25% {
+    background-image: url(../assets/images/slide3.jpg);
+  }
+  30% {
+    background-image: url(../assets/images/slide3.jpg);
+  }
+  35% {
+    background-image: url(../assets/images/slide4.jpg);
+  }
+  45% {
+    background-image: url(../assets/images/slide4.jpg);
+  }
+  50% {
+    background-image: url(../assets/images/slide5.jpg);
+  }
+  55% {
+    background-image: url(../assets/images/slide5.jpg);
+  }
+  60% {
+    background-image: url(../assets/images/slide5.jpg);
+  }
+  65% {
+    background-image: url(../assets/images/slide6.jpg);
+  }
+  70% {
+    background-image: url(../assets/images/slide6.jpg);
+  }
+  75% {
+    background-image: url(../assets/images/slide6.jpg);
+  }
+  80% {
+    background-image: url(../assets/images/slide10.jpg);
+  }
+  85% {
+    background-image: url(../assets/images/slide7.jpg);
+  }
+  100% {
+    background-image: url(../assets/images/slide8.jpg);
+  }
 }
 
 /* Keyframes for the navigation border   */
@@ -92,78 +126,72 @@
     }
   }
 
-.jump::before {
-  content: "📷";
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 1.5rem;
-  animation: bounce 1s infinite alternate;
-}
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
+  .jump::before {
+    content: "📷";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    animation: bounce 1s infinite alternate;
   }
-  50% {
-    transform: translateY(-10px);
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
-}
 
-.jump::before {
-  content: "📷";
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 3rem;
-  animation: bounce 1s infinite alternate;
-}
-.gallery-image {
-  box-shadow: 
-    0 5px 15px rgba(255, 215, 0, 0.6),
-    0 0 40px rgba(236, 232, 1, 0.8);  
-  transition: transform 0.3s ease-in-out;
-}
+  .jump::before {
+    content: "📷";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 3rem;
+    animation: bounce 1s infinite alternate;
+  }
+  .gallery-image {
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.6),
+      0 0 40px rgba(236, 232, 1, 0.8);
+    transition: transform 0.3s ease-in-out;
+  }
 
+  /* Keyframes for gallery   */
 
+  .gallery-image {
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4),
+      0 0 20px rgba(236, 232, 1, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
 
+  .gallery-image:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
 
-/* Keyframes for gallery   */
-
-.gallery-image {
-  /* الشكل الأساسي */
-  box-shadow:
-    0 5px 15px rgba(255, 215, 0, 0.4),
-    0 0 20px rgba(236, 232, 1, 0.4);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* التأثير عند تمرير الماوس */
-.gallery-image:hover {
-  transform: scale(1.05) rotate(2deg);
-  box-shadow:
-    0 10px 25px rgba(0, 0, 0, 0.2); 
-}
-
-/* عند الضغط */
-.gallery-image:active {
-  transform: scale(1.1) rotate(3deg);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-
-
-
+  .gallery-image:active {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
 }
 /* index animation  */
 
 h1 {
-  animation: colorchange 10s infinite alternate;
+  animation: colorchange 5s infinite alternate;
 }
 @keyframes colorchange {
   0% {
     color: white;
   }
+  25% {
+    color: blue;
+  }
   50% {
     color: yellow;
+  }
+  75% {
+    color: green;
   }
   75% {
     color: rgb(243, 5, 5);
@@ -174,13 +202,13 @@ h1 {
   }
 }
 
- /* index animation   images   */
+/* index animation   images   */
 
 .hover-zoom {
   transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 .hover-zoom:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
