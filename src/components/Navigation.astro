@@ -49,28 +49,28 @@ import "../css/fontawesome/css/all.min.css";
       <li class="list-item text-center p-2 xl">
         <a
           href="/"
-          class="block w-48 bg-yellow-500 bg-opacity-50 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 text-amber-300 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
+          class="block w-48 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 text-amber-300 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
           >Home</a
         >
       </li>
       <li class="list-item p-2 text-center">
         <a
           href="/produkt"
-          class="block w-48 bg-yellow-500 bg-opacity-50 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 text-amber-300 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
+          class="block w-48 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 text-amber-300 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
           >Kurse</a
         >
       </li>
       <li class="list-item text-center p-5 xl">
         <a
           href="/gallery"
-          class="block w-48 bg-yellow-500 bg-opacity-50 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 text-amber-300 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
+          class="block w-48  bg-opacity-50 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 text-amber-300 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
           >Gallery</a
         >
       </li>
       <li class="list-item text-center p-2">
         <a
           href="/checkout"
-          class="block w-48 text-yellow-500 bg-yellow-500 bg-opacity-50 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
+          class="block w-48 p-5 text-3xl md:text-4xl md:p-2 lg:text-yellow-50 lg:bg-none lg:bg-opacity-0 md:bg-none md:bg-opacity-0 rounded-tr-3xl rounded-bl-3xl border-blue-800 border md:border-none"
         >
           <i class="fas fa-shopping-cart"></i>
         </a>
@@ -124,6 +124,22 @@ import "../css/fontawesome/css/all.min.css";
     filter: brightness(1.2);
     background-color: var();
   }
+  .menu {
+
+    background: linear-gradient(
+    135deg,
+    rgba(58, 42, 16, 0.9),
+    rgba(0, 0, 0, 0.9)
+  );
+  color: #f0c14b; 
+  }
+
+  a {
+  font-family: "font-2", sans-serif;
+  text-shadow: 0 0 8px #0833f1; 
+}
+
+
   @media (min-width: 768px) {
     .logo:hover {
       transform: scale(1.1);
@@ -131,9 +147,12 @@ import "../css/fontawesome/css/all.min.css";
     }
 
     .menu {
-      background-color: #1a151567;
-      backdrop-filter: blur(10px);
-      max-width: 1200px; /* منع أن تصبح عريضة جدًا */
+
+      background: rgba(0, 0, 0, 0.3); 
+    /* طبقة تمويه */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px); /* Safari */
+      max-width: 1200px; 
       position:fixed;
       top: 1rem;
       right: 2rem;
@@ -157,6 +176,7 @@ import "../css/fontawesome/css/all.min.css";
     }
     a {
       font-family: "font-2", sans-serif;
+      filter: drop-shadow(0 0 0.5rem #0833f1b9);
     }
   }
 </style>
