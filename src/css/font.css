@@ -24,14 +24,12 @@
   .kamera .container  h2 {
     font-family: 'font-1';
     font-size: 2rem;
-    filter: drop-shadow(3px 3px 5px #f5ed07);
 
    
   }
-  .kamera .container  h3 {
+  .kamera .container   {
     font-family: 'font-3';
     color: black;
     font-size: 1.5rem;
-    filter: drop-shadow(3px 3px 5px #f5ed07);
     
   }

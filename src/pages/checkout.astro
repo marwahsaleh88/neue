@@ -14,41 +14,45 @@ const title: string = "Default Title";
   <form
     action="/confirm"
     method="post"
-    class="form-container w-[100%] text-yellow-100 text-2xl  mt-36 mb-9     rounded-tl-3xl rounded-br-3xl shadow-xl border-4 border-yellow-600 p-9
+    class="form-container w-full text-yellow-100 text-2xl  mt-36 mb-9     rounded-tl-3xl rounded-br-3xl shadow-xl border-2 border-blue-600 p-9
    "
+   
   >
     <!-- Kundendaten -->
     <section>
-      <h2 class="text-5xl font-semibold mb-4 text-center">Kundendaten</h2>
+      <h2 class="text-xl md:text-2xl mb-4 text-center">Kundendaten</h2>
       <div class="space-y-4">
-        <label for="name" class="block text-3xl">Name:</label>
+        <label for="name" class="block text-xl md:text-2xl">Name:</label>
         <input
           type="text"
           id="name"
           name="name"
           required
-          class="input-field"
+          class="input-field  rounded-tl-3xl rounded-br-3xl"
           placeholder="Name"
+        autocomplete="name"
         />
 
-        <label for="email" class="block text-3xl">E-Mail:</label>
+        <label for="email" class="block text-xl md:text-2xl">E-Mail:</label>
         <input
           type="email"
           id="email"
           name="email"
           required
-          class="input-field"
+          class="input-field rounded-tl-3xl rounded-br-3xl"
           placeholder="E-Mail"
+          autocomplete="email"
         />
 
-        <label for="phone" class="block text-3xl">Telefon:</label>
+        <label for="phone" class="block text-xl md:text-2xl">Telefon:</label>
         <input
           type="tel"
           id="phone"
           name="phone"
           required
-          class="input-field"
+          class="input-field rounded-tl-3xl rounded-br-3xl text-xl md:text-2xl"
           placeholder="Telefon"
+          autocomplete="tel"
         />
       </div>
     </section>
@@ -56,44 +60,45 @@ const title: string = "Default Title";
  <!-- Adresse -->
 <section>
   
-  <div class="space-y-4">
-    <label for="country" class="block text-3xl">Land:</label>
+  <div class="space-y-4 mt-3">
+    <label for="country" class="block text-xl md:text-2xl">Land:</label>
     <input
       type="text"
       id="country"
       name="country"
       required
-      class="input-field"
+      class="input-field rounded-tl-3xl rounded-br-3xl  text-xl md:text-2xl "
       placeholder="Land"
+
     />
 
-    <label for="city" class="block text-3xl">Stadt:</label>
+    <label for="city" class="block text-xl md:text-2xl">Stadt:</label>
     <input
       type="text"
       id="city"
       name="city"
       required
-      class="input-field"
+      class="input-field rounded-tl-3xl rounded-br-3xl text-xl md:text-2xl  "
       placeholder="Stadt"
     />
 
-    <label for="zipcode" class="block text-3xl">Postleitzahl:</label>
+    <label for="zipcode" class="block text-xl md:text-2xl">Postleitzahl:</label>
     <input
       type="text"
       id="zipcode"
       name="zipcode"
       required
-      class="input-field"
+      class="input-field  rounded-tl-3xl rounded-br-3xl text-xl md:text-2xl"
       placeholder="Postleitzahl"
     />
 
-    <label for="street" class="block text-3xl">Strassenadresse:</label>
+    <label for="street" class="block text-xl md:text-2xl">Strassenadresse:</label>
     <input
       type="text"
       id="street"
       name="street"
       required
-      class="input-field"
+      class="input-field rounded-tl-3xl rounded-br-3xl  text-xl md:text-2xl "
       placeholder="Strassenadresse"
     />
   </div>
@@ -101,7 +106,7 @@ const title: string = "Default Title";
 
     <!-- Zahlungsmethoden -->
     <section>
-      <h2 class="text-3xl font-semibold mb-4 text-center">Zahlungsmethoden</h2>
+      <h2 class="text-xl md:text-2xl mb-4 text-center">Zahlungsmethoden</h2>
       <div class="space-y-3">
         <label class="flex items-center space-x-2">
           <input
@@ -119,7 +124,7 @@ const title: string = "Default Title";
             name="payment"
             value="credit_card"
             required
-            class="w-6 h-6"
+            class="w-6 h-6 rounded-tl-3xl rounded-br-3xl"
           />
           <span> Kreditkarte</span>
         </label>
@@ -129,7 +134,7 @@ const title: string = "Default Title";
             name="payment"
             value="bank_transfer"
             required
-            class="w-6 h-6"
+            class="w-6 h-6 rounded-tl-3xl rounded-br-3xl"
           />
           <span> Bankueberweisung</span>
         </label>
@@ -137,30 +142,22 @@ const title: string = "Default Title";
     </section>
 
     <!-- Button -->
-    <button type="submit" class="button  rounded-tl-3xl rounded-br-3xl "> Kauf abschliessen </button>
+    <button type="submit" class="button  rounded-tl-3xl rounded-br-3xl  w-full p-4 text-xl md:text-2xl"> Kauf abschliessen </button>
    
     
 </form>
 </main>
-
-</MainLayout>
 <hr class="text-orange-700">
 
-
+</MainLayout>
 
   <style>
-
 main {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-footer {
-  width: 100%;
-  margin-top: auto;
 }
     body {
       font-family: "Poppins", sans-serif;
@@ -190,7 +187,6 @@ footer {
       width: 100%;
       padding: 0.75rem;
       border: 3px solid #1612f3ad;
-      border-radius: 8px;
       font-size: 1.5rem;
       color: #22223b;
       transition: all 0.3s ease;
@@ -205,14 +201,12 @@ footer {
     .input-field::placeholder {
       color: #04123a;
     }
-
     .button {
-      width: 100%;
-      padding: 0.75rem;
+      
+      
       background: linear-gradient(to right, #e0e409, #be5905);
       color: white;
-      font-size: 1.6rem;
-      font-weight: bold;
+      
       cursor: pointer;
       transition: all 0.3s ease;
     }

@@ -26,7 +26,7 @@ import image13 from "../assets/images/image13.webp";
     >
       <div class="info w-full max-w-screen-lg px-4 md:px-8">
         <h1
-          class="text-2xl bold md:text-7xl  text-white bg-white bg-opacity-20 p-2 rounded-md mb-2 sm:mb-3 "
+          class="text-2xl bold md:text-7xl text-white bg-white bg-opacity-20 p-2 rounded-md mb-2 sm:mb-3"
         >
           ONLINE PHOTOGRAPHY COURSES !
         </h1>
@@ -37,9 +37,11 @@ import image13 from "../assets/images/image13.webp";
     <div
       class="uberuns
       flex flex-col items-center justify-center text-center
-                border-2 border-yellow-400 mt-6  p-2 m-5 rounded-tl-3xl rounded-br-3xl "
+                border-2 border-yellow-400 mt-6 p-2 m-5 rounded-tl-3xl rounded-br-3xl"
     >
-      <h2 class=" text-center text-orange-500 text-2xl md:text-5xl rounded-tr-3xl rounded-bl-3xl  bg-white bg-opacity-20 p-2">
+      <h2
+        class="text-center text-orange-500 text-2xl md:text-5xl rounded-tr-3xl rounded-bl-3xl bg-white bg-opacity-20 p-2"
+      >
         FocusPro Schule
       </h2>
 
@@ -83,78 +85,84 @@ import image13 from "../assets/images/image13.webp";
     <section class="kamera p-2 mt-1 px-4">
       <div class="container mx-auto grid grid-cols-1 gap-8 px-4">
         <h2
-          class="  jump  text-orange-400 text-3xl font-bold text-center mb-9 underline underline-offset-9 decoration-red-500"
+          class="jump   text-3xl font-bold text-center mb-9 underline underline-offset-9 decoration-red-500 text-yellow-50"
         >
-           Kamera Angebote
+          Kamera Angebote
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Kamera 1 -->
           <div
-            class="flex flex-col items-center bg-gray-400 p-6 shadow-md w-full rounded-tl-3xl rounded-br-3xl"
+            class="flex flex-col items-center bg-black p-6 shadow-md w-full rounded-tl-3xl rounded-br-3xl"
           >
             <img
               src={canon.src}
               alt="kamera"
-              class="w-24 h-24 rounded-full object-cover"
+              class="w-52 h-52 rounded-full object-cover hover-zoom"
             />
-            <h3 class="text-xl font-semibold mt-4">📢 Canon EOS R5</h3>
-            <p class="text-black text-center">
+            <h3 class="text-xl font-semibold mt-4 text-white">
+              📢 Canon EOS R5
+            </h3>
+            <p class="text-white text-center">
               Professionelle Kamera mit 45 MP Auflösung und 8K-Video.
             </p>
-            <button
-              class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-bl-3xl rounded-tr-3xl"
+            <a href="/checkout">
+              <button
+                class="bg-orange-500 hover:bg-orange-700 text-black font-bold py-2 px-4 rounded mt-4 rounded-bl-3xl rounded-tr-3xl"
+              >
+                in den Warenkorb
+              </button></a
             >
-              in den Warenkorb
-            </button>
           </div>
 
           <!-- Kamera 2 -->
           <div
-            class="flex flex-col items-center bg-gray-400 p-6 shadow-md w-full rounded-tl-3xl rounded-br-3xl"
+            class="flex flex-col items-center bg-black p-6 shadow-md w-full rounded-tl-3xl rounded-br-3xl"
           >
             <img
               src={sony.src}
               alt="kamera 2"
-              class="w-24 h-24 rounded-full object-cover mb-10"
+              class="w-52 h-52 rounded-full object-cover mb-10 hover-zoom"
             />
-            <h3 class="text-xl font-semibold mt-16">📢 Sony A7 IV</h3>
-            <p class="text-black text-center">
+            <h3 class="text-white text-xl font-semibold mt-4">📢 Sony A7 IV</h3>
+            <p class="text-white text-center">
               Vollformatsensor mit 33 MP und 4K-Videoaufnahme.
             </p>
-
-            <button
-              class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-bl-3xl rounded-tr-3xl"
-            >
-              in den Warenkorb
-            </button>
+            <a href="/checkout">
+              <button
+                class="bg-orange-500 hover:bg-orange-700 text-black font-bold py-2 px-4 rounded mt-4 rounded-bl-3xl rounded-tr-3xl"
+              >
+                in den Warenkorb
+              </button>
+            </a>
           </div>
 
           <!-- Kamera 3 -->
           <div
-            class="flex flex-col items-center bg-gray-400 p-6 shadow-md w-full rounded-tl-3xl rounded-br-3xl"
+            class="flex flex-col items-center bg-black p-6 shadow-md w-full rounded-tl-3xl rounded-br-3xl"
           >
             <img
               src={nikon.src}
               alt="kamera 3"
-              class="w-24 h-24 rounded-full object-cover"
+              class="w-52 h-52 rounded-full object-cover hover-zoom"
             />
-            <h3 class="text-xl font-semibold mt-4">📢 NIKON Z9</h3>
-            <p class="text-black text-center">
+            <h3 class="text-xl font-semibold mt-4 text-white">📢 NIKON Z9</h3>
+            <p class="text-white text-center">
               Nikons beste professionelle Kamera mit 45,7 MP.
             </p>
-
-            <button
-              class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-bl-3xl rounded-tr-3xl"
-            >
-              in den Warenkorb
-            </button>
+            <a href="/checkout">
+              <button
+                class="bg-orange-500 hover:bg-orange-700 text-black font-bold py-2 px-4 rounded mt-4 rounded-bl-3xl rounded-tr-3xl"
+              >
+                in den Warenkorb
+              </button>
+            </a>
           </div>
         </div>
       </div>
 
       <ul
-        class="text-l md:text-2xl mt-10 text-black text-left md:text-center space-y-2"
+        class="text-l md:text-2xl mt-10 text-left md:text-center space-y-2"
       >
         <li>✔️ Einschließlich . 2 Jahre Garantie</li>
         <li>✔️ 30 Tage Rückgaberecht</li>
@@ -169,7 +177,7 @@ import image13 from "../assets/images/image13.webp";
         class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 bg-black bg-opacity-50 p-9"
       >
         <div
-        class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
+          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
         >
           <img
             src={work1.src}
@@ -178,9 +186,11 @@ import image13 from "../assets/images/image13.webp";
           />
 
           <h3 class="text-xl mt-2 text-white text-center">📌Workshop</h3>
-          <p class="    text-base  text-justify">🔹Kreative Bildkomposition</p>
-          <p class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10">        
-                🔹 Lerne die Grundlagen der Bildkomposition, um deine Fotos auf das
+          <p class="text-base text-justify">🔹Kreative Bildkomposition</p>
+          <p
+            class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10"
+          >
+            🔹 Lerne die Grundlagen der Bildkomposition, um deine Fotos auf das
             nächste Level zu bringen. Entdecke, wie du Linien, Farben und
             Perspektiven gezielt einsetzen kannst.
           </p>
@@ -196,11 +206,13 @@ import image13 from "../assets/images/image13.webp";
           <img
             src={work2.src}
             alt="bild2"
-            class="hover-zoom w-full object-cover rounded-md "
+            class="hover-zoom w-full object-cover rounded-md"
           />
           <h3 class="text-xl mt-2 text-white text-center">📌Workshop</h3>
-          <p class="    text-base  text-justify">🔹Licht und Schatten</p>
-          <p class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10">
+          <p class="text-base text-justify">🔹Licht und Schatten</p>
+          <p
+            class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10"
+          >
             Erfahre, wie du mit Licht und Schatten spielst, um dramatische und
             ausdrucksstarke Bilder zu erstellen. Perfekt für Porträt- und
             Landschaftsfotografie.
@@ -221,8 +233,10 @@ import image13 from "../assets/images/image13.webp";
             class="hover-zoom w-full object-cover rounded-md"
           />
           <h3 class="text-xl mt-2 text-white text-center">📌Workshop</h3>
-          <p class="    text-base  text-justify">🔹Kreative Bildkomposition</p>
-          <p class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10">
+          <p class="text-base text-justify">🔹Kreative Bildkomposition</p>
+          <p
+            class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10"
+          >
             Nutze dein Smartphone wie ein Profi! Entdecke Apps, Techniken und
             Tipps, um beeindruckende Bilder direkt mit deinem Handy aufzunehmen.
           </p>
@@ -242,8 +256,10 @@ import image13 from "../assets/images/image13.webp";
             class="hover-zoom w-full object-cover rounded-md"
           />
           <h3 class="text-xl mt-2 text-white text-center">📌Workshop</h3>
-          <p class="    text-base  ">🔹 Portraitfotografie mit natürlichem Licht</p>
-          <p class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10">
+          <p class="text-base">🔹 Portraitfotografie mit natürlichem Licht</p>
+          <p
+            class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10"
+          >
             Lerne, wie du beeindruckende Portraits mit natürlichem Licht
             aufnimmst. Perfekt für Fotografen, die ohne Studioausrüstung
             arbeiten möchten
@@ -263,15 +279,15 @@ import image13 from "../assets/images/image13.webp";
 
     <section class="team-section py-2 text-center px-4">
       <div class="container mx-auto px-4">
-        <h2 class="text-xl md:text-4xl font-bold text-yellow-100 mb-10    border-2 border-yellow-400   rounded-tl-3xl rounded-br-3xl  bg-black bg-opacity-65 p-2">
+        <h2
+          class="text-xl md:text-4xl font-bold text-yellow-100 mb-10 border-2 border-blue-600 rounded-tl-3xl rounded-br-3xl bg-black bg-opacity-65 p-2"
+        >
           Unser Team
         </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Mitglied 1 -->
-          <div
-            class="flex flex-col items-center p-6 w-full "
-          >
-            <div class="w-full h-full overflow-hidden ">
+          <div class="flex flex-col items-center p-6 w-full">
+            <div class="w-full h-full overflow-hidden">
               <img
                 src={image11.src}
                 alt="Teammitglied 1"
@@ -286,7 +302,7 @@ import image13 from "../assets/images/image13.webp";
 
           <!-- Mitglied 2 -->
           <div
-            class="flex flex-col items-center p-6  w-full rounded-tl-3xl rounded-br-3xl"
+            class="flex flex-col items-center p-6 w-full rounded-tl-3xl rounded-br-3xl"
           >
             <div class="w-full h-full overflow-hidden">
               <img
@@ -303,7 +319,7 @@ import image13 from "../assets/images/image13.webp";
 
           <!-- Mitglied 3 -->
           <div
-            class="flex flex-col items-center p-6  w-full rounded-tl-3xl rounded-br-3xl"
+            class="flex flex-col items-center p-6 w-full rounded-tl-3xl rounded-br-3xl"
           >
             <div class="w-full h-full overflow-hidden">
               <img
@@ -320,30 +336,36 @@ import image13 from "../assets/images/image13.webp";
         </div>
       </div>
     </section>
-    <a 
-    href="#top"
-    class="fixed bottom-6 right-6 bg-yellow-300 text-black text-xl px-4 py-2 
+    <a
+      href="#top"
+      class="fixed bottom-6 right-6 bg-yellow-300 text-black text-xl px-4 py-2
            rounded-tr-3xl rounded-bl-3xl hover:bg-green-500 transition duration-300"
-  >
-    Up
-  </a>
-  
+    >
+      Up
+    </a>
 
     <hr class="border-2 border-orange-600" />
 
     <!--        --------------      -->
-<input type="checkbox" id="accept-cookies" class="hidden peer absolute">
+    <input type="checkbox" id="accept-cookies" class="hidden peer absolute" />
 
-<!--  ______________________-->
-<div class="cookie-banner fixed bottom-9 left-1/2 transform -translate-x-1/2 bg-gray-600  text-yellow-300 p-9 rounded-tr-3xl rounded-bl-3xl shadow-lg w-[90%] max-w-md flex flex-col md:flex-row justify-between items-center z-[10000] transition-all duration-500 peer-checked:opacity-0 peer-checked:translate-y-5 peer-checked:pointer-events-none">
-  <p class="text-sm md:text-base">Diese Website verwendet Cookies, um Ihnen das beste Erlebnis zu bieten. <i class="fas fa-cookie-bite  text-3xl text-amber-600" ></i></p>
-  
-  <!-- aus :............................................................................-->
-  <label for="accept-cookies" class="mt-2 md:mt-0 bg-yellow-500 text-black px-4 py-2 rounded-tr-3xl rounded-bl-3xl hover:bg-yellow-600 transition cursor-pointer">
-    Akzeptieren
-  </label>
-</div>
+    <!--  ______________________-->
+    <div
+      class="cookie-banner fixed bottom-9 left-1/2 transform -translate-x-1/2 bg-gray-600 text-yellow-300 p-9 rounded-tr-3xl rounded-bl-3xl shadow-lg w-[90%] max-w-md flex flex-col md:flex-row justify-between items-center z-[10000] transition-all duration-500 peer-checked:opacity-0 peer-checked:translate-y-5 peer-checked:pointer-events-none"
+    >
+      <p class="text-sm md:text-base">
+        Diese Website verwendet Cookies, um Ihnen das beste Erlebnis zu bieten. <i
+          class="fas fa-cookie-bite text-3xl text-amber-600"></i>
+      </p>
 
+      <!-- aus :............................................................................-->
+      <label
+        for="accept-cookies"
+        class="mt-2 md:mt-0 bg-yellow-500 text-black px-4 py-2 rounded-tr-3xl rounded-bl-3xl hover:bg-yellow-600 transition cursor-pointer"
+      >
+        Akzeptieren
+      </label>
+    </div>
   </main>
 
   <style>
@@ -375,7 +397,7 @@ import image13 from "../assets/images/image13.webp";
 
       box-shadow: 0 0 10px #ecd8afc2;
     }
-.vater {
+    .vater {
       background: linear-gradient(180deg, #1c1c1c, #3a2a10, #b67f12);
     }
     .uberuns {
@@ -386,11 +408,9 @@ import image13 from "../assets/images/image13.webp";
     }
 
     #accept-cookies:checked ~ .cookie-banner {
-  opacity: 0;
-  transform: translateY(20px);
-  pointer-events: none;
-}
-
-
+      opacity: 0;
+      transform: translateY(20px);
+      pointer-events: none;
+    }
   </style>
 </MainLayout>
