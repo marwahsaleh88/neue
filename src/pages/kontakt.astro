@@ -1,0 +1,93 @@
+---
+import "../css/style.css";
+import "../css/font.css";
+import "../css/animation.css";
+import "../css/fontawesome/css/all.min.css";
+import MainLayout from "../layouts/MainLayout.astro";
+const title: string = "Default Title";
+---
+
+<MainLayout>
+  <main>
+    <div
+      class="kontakt mt-28 w-[80%] md:w-[40%] p-8 flex items-center justify-center"
+    >
+      <form
+        class="w-[100%] md:w-[90%] gap-4 p-8 rounded-tl-3xl rounded-br-3xl border-yellow-300 flex flex-col   text-xl md:text-2xl  "
+        action="https://formspree.io/f/mannwepl "  
+        method="post"
+      >
+        <label for="name">Name </label>
+        <input
+          class="rounded-tl-3xl rounded-br-3xl p-4 "
+          type="text"
+          id="name"
+          name="name"
+          placeholder=" ???"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          class="rounded-tl-3xl rounded-br-3xl p-4"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="???@???.???"
+          required
+        />
+
+        <label for="message">Schreib uns</label>
+        <textarea
+          class="rounded-tl-3xl rounded-br-3xl p-4"
+          id="message"
+          name="message"
+          placeholder="Deine Nachricht"
+          required></textarea>
+
+        <input
+          class="rounded-tl-3xl rounded-br-3xl p-4  text-yellow-400 border-none cursor-pointer "
+          type="submit"
+          value="Send"
+        />
+      </form>
+    </div>
+    <style>
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/slider8.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      form {
+        background-color: #0000ff54;
+        color: #fdfdfd;
+        font-family: "Poppins", sans-serif;
+       
+      }
+
+      input,
+      textarea {
+       
+        color: #020329;
+        background-image: url("/slider8.webp");
+      }
+      textarea {
+        height: 12rem;
+        resize: vertical;
+      }
+      input[type="submit"] {
+        color:rgb(241, 226, 6)
+       
+      }
+      input[type="submit"]:hover {
+       
+        color: #fdfdfd;
+      }
+    </style>
+  </main></MainLayout
+>
