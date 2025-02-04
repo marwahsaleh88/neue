@@ -22,7 +22,7 @@ h1
     text-align: center;
 }
 main {
-    
+    font-size: 2rem;
     padding: 1rem;
     background-color: #a4ac87ab;
     border-radius: 5px;
@@ -31,6 +31,10 @@ main {
     gap: 1rem;
     text-align: justify;
     
+}
+main h2 {
+    font-size: 1.5rem;
+    color: #eb1f11;
 }
 
 

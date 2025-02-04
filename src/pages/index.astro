@@ -6,13 +6,13 @@ import "../css/fontawesome/css/all.min.css";
 import MainLayout from "../layouts/MainLayout.astro";
 const title: string = "Default Title";
 // import imges
-import work1 from "../assets/images/work1.jpg";
-import work2 from "../assets/images/work2.jpg";
-import work3 from "../assets/images/work3.jpg";
-import work4 from "../assets/images/work4.jpg";
-import sony from "../assets/images/sony.jpg";
-import canon from "../assets/images/canon.jpg";
-import nikon from "../assets/images/nikon.jpg";
+import work1 from "../assets/images/work1.webp";
+import work2 from "../assets/images/work2.webp";
+import work3 from "../assets/images/work3.webp";
+import work4 from "../assets/images/work4.webp";
+import sony from "../assets/images/sony.webp";
+import canon from "../assets/images/canon.webp";
+import nikon from "../assets/images/nikon.webp";
 import image11 from "../assets/images/image11.webp";
 import image12 from "../assets/images/image12.webp";
 import image13 from "../assets/images/image13.webp";
@@ -26,9 +26,9 @@ import image13 from "../assets/images/image13.webp";
     >
       <div class="info w-full max-w-screen-lg px-4 md:px-8">
         <h1
-          class="text-2xl bold md:text-7xl text-white bg-white bg-opacity-20 p-2 rounded-md mb-2 sm:mb-3"
+          class="text-2xl bold md:text-7xl text-white bg-black bg-opacity-60 p-2 rounded-tr-3xl rounded-bl-3xl    mb-2 sm:mb-3"
         >
-          ONLINE PHOTOGRAPHY COURSES !
+        FocusPro Schule
         </h1>
       </div>
     </div>
@@ -45,9 +45,7 @@ import image13 from "../assets/images/image13.webp";
         FocusPro Schule
       </h2>
 
-      <h2 class="text-2xl p-4 text-yellow-200 md:text-2xl lg:text-5xl">
-        Online-Fotoschule
-      </h2>
+     
       <p class="text-xl text-white md:text-2xl lg:text-4xl">
         Willkommen in unserer spezialisierten Online-Fotoschule! Wir bieten
         professionelle Fotokurse, die du bequem von überall aus absolvieren
@@ -90,20 +88,20 @@ import image13 from "../assets/images/image13.webp";
           Kamera Angebote
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Kamera 1 -->
           <div
-            class="flex flex-col items-center bg-black p-6 shadow-md w-full rounded-tl-3xl rounded-br-3xl"
+            class="flex flex-col items-center bg-black p-10 shadow-md w-full rounded-tl-3xl rounded-br-3xl"
           >
             <img
               src={canon.src}
               alt="kamera"
-              class="w-52 h-52 rounded-full object-cover hover-zoom"
+              class="w-52 h-64 rounded-full object-cover hover-zoom "
             />
-            <h3 class="text-xl font-semibold mt-4 text-white">
+            <h3 class="text-xl font-semibold mt-4 text-white p-2">
               📢 Canon EOS R5
             </h3>
-            <p class="text-white text-center">
+            <p class="text-white text-center p-3">
               Professionelle Kamera mit 45 MP Auflösung und 8K-Video.
             </p>
             <a href="/checkout">
@@ -177,7 +175,7 @@ import image13 from "../assets/images/image13.webp";
         class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 bg-black bg-opacity-50 p-9"
       >
         <div
-          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
+          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-5 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
         >
           <img
             src={work1.src}
@@ -185,87 +183,87 @@ import image13 from "../assets/images/image13.webp";
             class="hover-zoom w-full object-cover rounded-md"
           />
 
-          <h3 class="text-xl mt-2 text-white text-center">📌Workshop</h3>
-          <p class="text-base text-justify">🔹Kreative Bildkomposition</p>
+          <h3 class="text-2xl  text-white text-center md:2xl mt-4">📌Workshop</h3>
+          <p class="text-base text-justify  md:text-2xl ">🔹Kreative Bildkomposition</p>
           <p
-            class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10"
+            class="text-base leading-relaxed text-white px-4  md:px-10 md:text-2xl "
           >
             🔹 Lerne die Grundlagen der Bildkomposition, um deine Fotos auf das
             nächste Level zu bringen. Entdecke, wie du Linien, Farben und
             Perspektiven gezielt einsetzen kannst.
           </p>
           <button
-            class="bg-yellow-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-tl-3xl rounded-br-3xl"
+            class="bg-yellow-600  hover:bg-green-600 text-black md:text-2xl  font-bold py-2 px-4 rounded mt-6 rounded-tl-3xl rounded-br-3xl"
           >
             Mehr Infos
           </button>
         </div>
         <div
-          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
+          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-5 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
         >
           <img
             src={work2.src}
             alt="bild2"
             class="hover-zoom w-full object-cover rounded-md"
           />
-          <h3 class="text-xl mt-2 text-white text-center">📌Workshop</h3>
-          <p class="text-base text-justify">🔹Licht und Schatten</p>
+          <h3 class="text-2xl mt-4 text- white text-center">📌Workshop</h3>
+          <p class="text-base text-justify md:text-2xl  ">🔹Licht und Schatten</p>
           <p
-            class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10"
+            class="text-base leading-relaxed text-white px-4  md:px-10 md:text-2xl "
           >
             Erfahre, wie du mit Licht und Schatten spielst, um dramatische und
             ausdrucksstarke Bilder zu erstellen. Perfekt für Porträt- und
             Landschaftsfotografie.
           </p>
           <button
-            class="bg-yellow-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-tl-3xl rounded-br-3xl"
+            class="bg-yellow-600 hover:bg-green-600 text-black font-bold py-2 px-4 rounded mt-4 rounded-tl-3xl rounded-br-3xl md:text-2xl"
           >
             Mehr Infos
           </button>
         </div>
 
         <div
-          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
+          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-5 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
         >
           <img
             src={work3.src}
             alt="bild3"
             class="hover-zoom w-full object-cover rounded-md"
           />
-          <h3 class="text-xl mt-2 text-white text-center">📌Workshop</h3>
-          <p class="text-base text-justify">🔹Kreative Bildkomposition</p>
+          <h3 class="text-2xl mt-4 text-white text-center">📌Workshop</h3>
+          <p class="text-base text-justify md:text-2xl">🔹Kreative Bildkomposition</p>
           <p
-            class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10"
+            class="text-base leading-relaxed text-white px-4  md:px-10 md:text-2xl "
           >
             Nutze dein Smartphone wie ein Profi! Entdecke Apps, Techniken und
             Tipps, um beeindruckende Bilder direkt mit deinem Handy aufzunehmen.
           </p>
           <button
-            class="bg-yellow-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-tl-3xl rounded-br-3xl"
+            class="bg-yellow-600 hover:bg-green-600 text-black md:text-2xl font-bold py-2 px-4 rounded mt-4 rounded-tl-3xl rounded-br-3xl"
           >
             Mehr Infos
           </button>
         </div>
 
         <div
-          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-30 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
+          class="flex flex-col items-center text-center w-full min-w-full bg-yellow-400 bg-opacity-5 rounded-bl-3xl rounded-tr-3xl p-10 hover:bg-opacity-50"
         >
           <img
             src={work4.src}
             alt="bild4"
             class="hover-zoom w-full object-cover rounded-md"
           />
-          <h3 class="text-xl mt-2 text-white text-center">📌Workshop</h3>
-          <p class="text-base">🔹 Portraitfotografie mit natürlichem Licht</p>
+          <h3 class="text-2xl mt-4 text-white text-center">📌Workshop</h3>
+          <p class="text-base md:text-2xl text-justify ">🔹 Portraitfotografie mit natürlichem Licht</p>
           <p
-            class="text-base leading-relaxed text-white px-4 md:text-lg md:px-10"
+            class="text-base leading-relaxed text-white px-4 md:text-2xl md:px-10"
           >
             Lerne, wie du beeindruckende Portraits mit natürlichem Licht
             aufnimmst. Perfekt für Fotografen, die ohne Studioausrüstung
             arbeiten möchten
           </p>
           <button
-            class="bg-yellow-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-4 rounded-tl-3xl rounded-br-3xl"
+            class="bg-yellow-600 hover:bg-green-600 md:text-2xl text-black font-bold py-2 px-4 rounded mt-4 rounded-tl-3xl rounded-br-3xl"
           >
             Mehr Infos
           </button>
@@ -346,7 +344,7 @@ import image13 from "../assets/images/image13.webp";
 
     <hr class="border-2 border-orange-600" />
 
-    <!--        --------------      -->
+    <!--        -----cookies mit css ---------      -->
     <input type="checkbox" id="accept-cookies" class="hidden peer absolute" />
 
     <!--  ______________________-->

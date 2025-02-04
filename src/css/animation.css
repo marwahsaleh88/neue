@@ -1,10 +1,10 @@
-/* Keyframes for section hero  */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* index  */
 .slideshow {
   width: 100%;
   height: 60vh;
@@ -27,65 +27,42 @@
     background-position: 0% center;
   }
 }
+
+/* gallery- seite   */
 .gallery-slider {
-  width: 100%;
+  width: 90%;
   height: 50vh;
+  border: 1px solid #0059ff;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   border-radius: 10px;
   animation: gallery 10s infinite linear;
 }
 @keyframes gallery {
   0% {
-    background-image: url(../assets/images/slide1.jpg);
+    background-image: url(/public/slider1.webp);
   }
-  10% {
-    background-image: url(../assets/images/slide2.jpg);
-  }
-  15% {
-    background-image: url(../assets/images/slide2.jpg);
-  }
-  20% {
-    background-image: url(../assets/images/slide3.jpg);
+  12.5% {
+    background-image: url(/public/slider2.webp);
   }
   25% {
-    background-image: url(../assets/images/slide3.jpg);
+    background-image: url(/public/slider3.webp);
   }
-  30% {
-    background-image: url(../assets/images/slide3.jpg);
-  }
-  35% {
-    background-image: url(../assets/images/slide4.jpg);
-  }
-  45% {
-    background-image: url(../assets/images/slide4.jpg);
+  37.5% {
+    background-image: url(/public/slider4.webp);
   }
   50% {
-    background-image: url(../assets/images/slide5.jpg);
+    background-image: url(/public/slider5.webp);
   }
-  55% {
-    background-image: url(../assets/images/slide5.jpg);
-  }
-  60% {
-    background-image: url(../assets/images/slide5.jpg);
-  }
-  65% {
-    background-image: url(../assets/images/slide6.jpg);
-  }
-  70% {
-    background-image: url(../assets/images/slide6.jpg);
+  62.5% {
+    background-image: url(/public/slider6.webp);
   }
   75% {
-    background-image: url(../assets/images/slide6.jpg);
-  }
-  80% {
-    background-image: url(../assets/images/slide10.jpg);
-  }
-  85% {
-    background-image: url(../assets/images/slide7.jpg);
+    background-image: url(/public/slider7.webp);
   }
   100% {
-    background-image: url(../assets/images/slide8.jpg);
+    background-image: url(/public/slider8.webp);
   }
 }
 

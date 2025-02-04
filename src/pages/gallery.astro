@@ -6,112 +6,210 @@ import "../css/fontawesome/css/all.min.css";
 import MainLayout from "../layouts/MainLayout.astro";
 const title: string = "Default Title";
 // import imges
-import sto1 from "../assets/images/sto1.jpg";
-import sto2 from "../assets/images/sto2.jpg";
-import sto3 from "../assets/images/sto3.jpg";
-import sto4 from "../assets/images/sto4.jpg";
-import sto5 from "../assets/images/sto5.jpg";
-import sto6 from "../assets/images/sto6.jpg";
-import sto7 from "../assets/images/sto7.jpg";
-import sto8 from "../assets/images/sto8.jpg";
-import sto9 from "../assets/images/sto9.jpg";
-import sto10 from "../assets/images/sto10.jpg";
-import sto11 from "../assets/images/sto11.jpg";
-import sto12 from "../assets/images/sto12.jpg";
-
+import sto1 from "../assets/images/sto1.webp";
+import sto2 from "../assets/images/sto2.webp";
+import sto3 from "../assets/images/sto3.webp";
+import sto4 from "../assets/images/sto4.webp";
+import sto5 from "../assets/images/sto5.webp";
+import sto6 from "../assets/images/sto6.webp";
+import sto7 from "../assets/images/sto7.webp";
+import sto8 from "../assets/images/sto8.webp";
+import sto9 from "../assets/images/sto9.webp";
+import sto10 from "../assets/images/sto10.webp";
+import sto11 from "../assets/images/sto11.webp";
+import sto12 from "../assets/images/sto12.webp";
 ---
 
 <MainLayout>
   <main class="py-10 min-h-screen flex flex-col items-center justify-center">
-    <div class="gallery-slider mb-7 flex items-center justify-center mt-0">
+    <div
+      class="gallery-slider mb-7 flex items-center justify-center mt-0 rounded-tl-3xl rounded-br-3xl"
+    >
       <h3
-        class="text-5xl md:text-[5rem] text-black font-bold border bg-white opacity-20 p-6 rounded-tr-3xl rounded-bl-3xl text-center"
+        class="text-5xl md:text-[5rem] text-black font-bold border bg-blue-800 opacity-30 p-6 rounded-tr-3xl rounded-bl-3xl text-center"
       >
         Gallery
       </h3>
     </div>
 
     <div
-      class="gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-9 w-[90%] mx-auto justify-items-center"
+      class="gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-9 w-[90%] mx-auto justify-items-center"
     >
-      <img
-        src={sto1.src}
-        alt="work1"
-        class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-      <img
-        src={sto3.src}
-        alt="work3"
-        class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-      <img
-        src={sto4.src}
-        alt="work4"
-        class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-      <img
-        src={sto2.src}
-        alt="work2"
-        class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-      <img
-        src={sto6.src}
-        alt="work4"
-        class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-      <img
-        src={sto7.src}
-        alt="work4"
-        class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-      <img
-        src={sto8.src}
-        alt="work4"
-        class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-      <img
-        src={sto9.src}
-        alt="work4"
-        class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-      <img
-        src={sto10.src}
-        alt="work4"
-        class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-      <img
-        src={sto11.src}
-        alt="work4"
-        class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-      <img
-        src={sto12.src}
-        alt="work4"
-        class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-      <img
-        src={sto5.src}
-        alt="work4"
-        class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
-      />
-     
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-blue-950 text-2xl md:text-4xl p-1 flex items-end bg-yellow-500 opacity-60 rounded-tr-3xl rounded-bl-3xl"
+        >
+          Photography of landmarks
+        </h2>
+        <img
+          src={sto1.src}
+          alt="work1"
+          class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[70%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
+
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-blue-950 text-2xl md:text-4xl p-1 flex items-end bg-yellow-500 opacity-60 rounded-tr-3xl rounded-bl-3xl"
+        >
+          Photographic portrait
+        </h2>
+        <img
+          src={sto3.src}
+          alt="work3"
+          class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
+
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-blue-950 text-2xl md:text-4xl p-1 flex items-end bg-yellow-500 opacity-60 rounded-tr-3xl rounded-bl-3xl"
+        >
+          Marketing-Fotografie
+        </h2>
+        <img
+          src={sto4.src}
+          alt="work4"
+          class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-[90%] object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
+
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-yellow-200 text-2xl md:text-4xl p-1 flex items-end bg-black rounded-tr-3xl rounded-bl-3xl"
+        >
+          Porträt mit Photoshop
+        </h2>
+        <img
+          src={sto2.src}
+          alt="work2"
+          class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-blue-950 text-2xl md:text-5xl p-1 flex items-end bg-yellow-500 opacity-60 rounded-tr-3xl rounded-bl-3xl"
+        >
+          Fantasy-Porträt
+        </h2>
+        <img
+          src={sto6.src}
+          alt="work4"
+          class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-[90%] object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
+
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-blue-950 text-2xl md:text-5xl p-1 flex items-end bg-yellow-500 opacity-60 rounded-tr-3xl rounded-bl-3xl"
+        >
+          Fotoshooting
+        </h2>
+        <img
+          src={sto7.src}
+          alt="work4"
+          class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-blue-950 text-2xl md:text-4xl p-1 flex items-end bg-yellow-500 opacity-60 rounded-tr-3xl rounded-bl-3xl"
+        >
+          Bewegungsunschärfe
+        </h2>
+        <img
+          src={sto8.src}
+          alt="work4"
+          class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-blue-950 text-2xl md:text-6xl p-1 flex items-end bg-yellow-500 opacity-60 rounded-tr-3xl rounded-bl-3xl"
+        >
+          Tierfotografie
+        </h2>
+        <img
+          src={sto9.src}
+          alt="work4"
+          class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-blue-950 text-2xl md:text-6xl p-1 flex items-end bg-yellow-500 opacity-60 rounded-tr-3xl rounded-bl-3xl"
+        >
+          Tierfotografie
+        </h2>
+        <img
+          src={sto10.src}
+          alt="work4"
+          class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-[85%] object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-blue-950 text-2xl md:text-6xl p-1 flex items-end bg-yellow-500 opacity-60 rounded-tr-3xl rounded-bl-3xl"
+        >
+          Wildtierfotografie
+        </h2>
+        <img
+          src={sto11.src}
+          alt="work4"
+          class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-[85%] object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
+
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-blue-950 text-2xl md:text-6xl p-1 flex items-end bg-yellow-500 opacity-60 rounded-tr-3xl rounded-bl-3xl"
+        >
+          Zufällige Porträtfotos
+        </h2>
+        <img
+          src={sto12.src}
+          alt="work4"
+          class="gallery-image rounded-tr-3xl rounded-bl-3xl w-[80%] h-auto object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
+      <div class="relative w-[100%] flex items-center justify-center">
+        <h2
+          class="absolute bottom-20 text-blue-950 text-2xl md:text-6xl p-1 flex items-end bg-yellow-500 opacity-60 rounded-tr-3xl rounded-bl-3xl"
+        >
+          Disco-Lichtfotografie
+        </h2>
+
+        <img
+          src={sto5.src}
+          alt="work4"
+          class="gallery-image rounded-tl-3xl rounded-br-3xl w-[80%] h-[85%] object-cover shadow-lg transition-transform duration-300 ease-in-out"
+        />
+      </div>
     </div>
-    <a 
-    href="#top"
-    class="fixed bottom-6 right-6 bg-blue-700  text-white text-xl px-4 py-2 
+    <a
+      href="#top"
+      class="fixed bottom-6 right-6 bg-blue-700 text-white text-xl px-4 py-2
            rounded-tr-3xl rounded-bl-3xl hover:bg-green-500 transition duration-300"
-  >
-    Up
-  </a>
-  
+    >
+      Up
+    </a>
   </main>
 </MainLayout>
 
 <style>
   main {
-    
-    background: linear-gradient(160deg, rgba(0, 0, 0, 1) 50%, rgba(255, 215, 0, 0.2) 90%),
-    conic-gradient(from 90deg, rgba(255, 215, 0, 0.1) 0%, rgba(0, 0, 0, 0) 30%, rgba(255, 217, 0, 0.397) 60%, rgba(0, 0, 0, 0) 100%);
-  background-attachment: fixed;
+    background: linear-gradient(
+        160deg,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(255, 215, 0, 0.2) 90%
+      ),
+      conic-gradient(
+        from 90deg,
+        rgba(255, 215, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0) 30%,
+        rgba(255, 217, 0, 0.397) 60%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    background-attachment: fixed;
   }
 </style>
