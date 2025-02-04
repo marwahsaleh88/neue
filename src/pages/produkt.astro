@@ -15,7 +15,7 @@ import pic12 from "../assets/images/pic12.webp";
 ---
 
 <MainLayout>
-  <section class="container mx-auto px-4 pt-80  mb-16">
+  <section class="container mx-auto px-4 pt-12  mb-14">
     <h2 class=" jump text-5xl text-center   text-yellow-200  ">Unsere Kurse</h2>
     <p class="text-center max-w-2xl mx-auto mb-8 text-2xl text-yellow-100">Alle Kurse sind online verfügbar mit Live-Support, Aufzeichnungen der Vorlesungen, flexiblen Lernzeiten, zertifizierten Abschlüssen und zusätzlichem Lernmaterial.</p>
    
@@ -84,43 +84,36 @@ import pic12 from "../assets/images/pic12.webp";
       </div>
     </section>
     
-    <section class="table-container">
+    <section class="table-container w-[90%] mx-auto md:w-[60%]">
       <table>
-        <caption class="text-2xl text-orange-300">Übersicht der Fotografie-Kurse</caption>
-
-
+        <caption class="text-2xl text-orange-300 mb-5">Übersicht der Fotografie-Kurse</caption>
         <thead>
           <tr>
-            <th>Kurs</th>
-            <th>Preis</th>
-            <th>Dauer</th>
-            <th>Datum</th>
+            <th class="p-1 md:text-2xl">Kurs</th>
+            <th  class="p-1 md:text-2xl">Preis</th>
+            <th class="p-1 md:text-2xl">Datum</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="p-2">Sportfotografie</td>
-            <td>100€</td>
-            <td>12 Stunden</td>
-            <td>2024-04-20</td>
+          <tr   >
+            <td class="p-1 md:text-2xl">Sportfotografie</td>
+            <td class="p-1 md:text-2xl" >100€</td>
+            <td class="p-1 md:text-2xl"  >2024-04-20</td>
+          </tr>
+          <tr >
+            <td class="p-1 md:text-2xl" >Architekturfotografie</td>
+            <td class="p-1 md:text-2xl">100€</td>
+            <td class="p-1 md:text-2xl">2024-06-20</td>
           </tr>
           <tr>
-            <td class="p-2" >Architekturfotografie</td>
-            <td>100€</td>
-            <td>10 Stunden</td>
-            <td>2024-06-20</td>
+            <td class="p-1 md:text-2xl">Porträtfotografie</td>
+            <td class="p-1 md:text-2xl">100€</td>
+            <td class="p-1 md:text-2xl" >2024-08-20</td>
           </tr>
           <tr>
-            <td class="p-2">Porträtfotografie</td>
-            <td>100€</td>
-            <td>15 Stunden</td>
-            <td>2024-08-20</td>
-          </tr>
-          <tr>
-            <td class="p-2">Mobile Fotografie</td>
-            <td>100€</td>
-            <td>8 Stunden</td>
-            <td>2024-10-01</td>
+            <td class="p-1 md:text-2xl">Mobile Fotografie</td>
+            <td class="p-1 md:text-2xl" >100€</td>
+            <td class="p-1 md:text-2xl"  >2024-10-01</td>
           </tr>
          
         </tbody>
@@ -163,21 +156,17 @@ table {
     text-align: left;
     background: rgba(17, 17, 2, 0.3);
     box-shadow: 0 0 10px rgba(218, 65, 5, 0.87);
-    border-radius: 10px;
+   
     overflow: hidden;
 }
 
 td {
     border: none;
-font-size: 1.4rem;
 }
 
 th {
-    padding: 1rem;
     background: #222;
     color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
     text-transform: uppercase;
     border-bottom: #ec5a05 3px solid;
 }
@@ -190,6 +179,14 @@ tr:hover {
     background: #dfb016;
     color: #000;
 }
- 
+th:nth-child(1),
+td:nth-child(1) {
+  border-right: 1px solid orange; 
+  padding-right: 15px; 
+}
 
+th:nth-child(2),
+td:nth-child(2) {
+  padding-left: 15px; 
+}
 </style>
