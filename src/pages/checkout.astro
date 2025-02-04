@@ -3,13 +3,13 @@ import "../css/style.css";
 import "../css/font.css";
 import "../css/animation.css";
 import "../css/fontawesome/css/all.min.css";
-import Footer from "../components/Footer.astro";
-import Navigation from "../components/Navigation.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+const title: string = "Default Title";
 ---
-<main class="checkout-container flex flex-col items-center justify-center">
 
-  <Navigation />
-
+<MainLayout> 
+  
+  <main class="checkout-container flex flex-col items-center justify-center">
   <!-- Form -->
   <form
     action="/confirm"
@@ -142,10 +142,11 @@ import Navigation from "../components/Navigation.astro";
     
 </form>
 </main>
+
+</MainLayout>
 <hr class="text-orange-700">
 
 
-<Footer />
 
   <style>
 
@@ -189,7 +190,6 @@ footer {
       width: 100%;
       padding: 0.75rem;
       border: 3px solid #1612f3ad;
-      border-radius: 10px;
       border-radius: 8px;
       font-size: 1.5rem;
       color: #22223b;
@@ -246,4 +246,4 @@ footer {
       }
     }
   </style>
-</Footer>
+

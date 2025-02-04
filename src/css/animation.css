@@ -117,8 +117,8 @@
 }
 .gallery-image {
   box-shadow: 
-    0 5px 15px rgba(255, 215, 0, 0.6), /* ظل ذهبي ناعم أسفل الصورة */
-    0 0 40px rgba(236, 232, 1, 0.8);  /* تأثير إشعاعي متوهج حول الصورة */
+    0 5px 15px rgba(255, 215, 0, 0.6),
+    0 0 40px rgba(236, 232, 1, 0.8);  
   transition: transform 0.3s ease-in-out;
 }
 
@@ -127,36 +127,26 @@
 
 /* Keyframes for gallery   */
 
-.gallery-image:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-@keyframes moveJumpScale {
-0% {
-transform: translateX(0) scale(1);
-}
-25% {
-transform: translateX(20px) scale(1);
-}
-50% {
-transform: translateX(-20px) scale(1);
-}
-75% {
-transform: translateY(-20px) scale(1.1);
-}
-100% {
-transform: translateY(0) scale(1);
-}
+.gallery-image {
+  /* الشكل الأساسي */
+  box-shadow:
+    0 5px 15px rgba(255, 215, 0, 0.4),
+    0 0 20px rgba(236, 232, 1, 0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+/* التأثير عند تمرير الماوس */
 .gallery-image:hover {
-animation: moveJumpScale 0.8s ease-in-out ;
+  transform: scale(1.05) rotate(2deg);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.2); 
 }
 
+/* عند الضغط */
 .gallery-image:active {
-transform: scale(1.3) rotate(3deg);
-transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 
